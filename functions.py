@@ -5,7 +5,6 @@ def execution_time(func):
         time_start = time.time()
         res = func(*args, **kwargs)
         time_finish = time.time()
-        execution_time = time_finish - time_start
-        print("Script execution time: %s sec" % execution_time)
+        print("Script execution time: %s sec" % (time_finish - time_start))
         return res
     return wrapped
