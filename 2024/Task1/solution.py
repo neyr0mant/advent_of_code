@@ -1,7 +1,6 @@
 #https://adventofcode.com/2024/day/1
 list1, list2 = [], []
-f = open('input.txt')
-for line in f:
+for line in open('input.txt'):
     a, b = line.split()
     list1.append(int(a))
     list2.append(int(b))
