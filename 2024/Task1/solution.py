@@ -7,11 +7,7 @@ for line in f:
     list2.append(int(b))
 list1.sort(reverse=True)
 list2.sort(reverse=True)
-summ = 0
-for idx, i in enumerate(list1):
-    summ += abs(i-list2[idx])
+summ = sum([abs(i-list2[idx]) for idx, i in enumerate(list1)])
 print(f"Решение части 1 {summ}")
-power = 0
-for i in list1:
-    power += i*list2.count(i)
+power = sum([i*list2.count(i) for i in list1])
 print(f"Решение части 2 {power}")
