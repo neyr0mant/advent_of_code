@@ -9,9 +9,9 @@ list1.sort(reverse=True)
 list2.sort(reverse=True)
 summ = 0
 for idx, i in enumerate(list1):
-    summ += abs(int(i)-list2[idx])
-print(summ)
+    summ += abs(i-list2[idx])
+print(f"Решение части 1 {summ}")
 power = 0
 for i in list1:
     power += i*list2.count(i)
-print(power)
+print(f"Решение части 2 {power}")
