@@ -1,7 +1,7 @@
 import os
-from execution_time import execution_time
+from functions import execution_time
 # link task https://adventofcode.com/2020/day/18
-path_to_data = os.path.join(".", r"data_task\18.txt")
+path_to_data = os.path.join(".", r"input.txt")
 
 
 def read_data(path):
