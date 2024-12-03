@@ -27,8 +27,8 @@ def get_multiplication(str_in, part=1):
                 if "do()" in i:
                     dont = False
     return summ
-
-print(get_multiplication(data, part=2))
+print(f"Решение части 1:{get_multiplication(data, part=1)}")
+print(f"Решение части 1: {get_multiplication(data, part=2)}")
 
 
 
