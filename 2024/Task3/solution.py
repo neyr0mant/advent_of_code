@@ -28,7 +28,7 @@ def get_multiplication(str_in, part=1):
                     dont = False
     return summ
 print(f"Решение части 1:{get_multiplication(data, part=1)}")
-print(f"Решение части 1: {get_multiplication(data, part=2)}")
+print(f"Решение части 2: {get_multiplication(data, part=2)}")
 
 
 
