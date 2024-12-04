@@ -25,6 +25,7 @@ def search(x, y, list_word, matrix, word_find):
             if len_ == len(word_find):
                 count_ += 1
     return count_
+
 def get_count_word(list_word, part=1):
     matrix, word_find, letter_find = (DATA_V1,'MAS', "X") if part == 1 else (DATA_V2, 'MMSS', "A")
     result = 0
