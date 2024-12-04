@@ -1,5 +1,5 @@
 #https://adventofcode.com/2024/day/4
-list_data = [i.strip("\n") for i in open("input2.txt")]
+list_data = [i.strip("\n") for i in open("input.txt")]
 
 DATA_V1 = [[[1, 0], [2, 0], [3, 0]],[[1, 1], [2, 2], [3, 3]],[[0, 1], [0, 2], [0, 3]],[[-1, 1], [-2, 2], [-3, 3]],
            [[-1, 0], [-2, 0], [-3, 0]],[[-1, -1], [-2, -2], [-3, -3]],[[0, -1], [0, -2], [0, -3]],
