@@ -21,9 +21,9 @@ DATA_V2 = [
 
 def search(x, y, list_word, matrix, word_find):
     count_ = 0
-    for str_ in matrix:
+    for data in matrix:
         len_ = 0
-        for index, delta_ in enumerate(str_):
+        for index, delta_ in enumerate(data):
             x_delta, y_delta = delta_
             x_, y_ = x + x_delta, y + y_delta
             if x_ < 0 or y_ < 0:
@@ -31,7 +31,7 @@ def search(x, y, list_word, matrix, word_find):
             try:
                 if list_word[y_][x_] != word_find[index]:
                     break
-            except (ValueError, IndexError):
+            except IndexError:
                 break
             len_ += 1
             if len_ == len(word_find):
