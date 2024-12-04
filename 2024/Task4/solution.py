@@ -35,7 +35,6 @@ def get_count_word(list_word, part=1):
                 count_all += search(x, y, list_word, matrix, word_find)
     return count_all
 
-
 print(f"Решение части 1: {get_count_word(list_data, part=1)}")
 print(f"Решение части 2: {get_count_word(list_data, part=2)}")
 
