@@ -15,8 +15,6 @@ for i in open("input.txt"):
     if "," in x:
         list_str_rule = x.split(",")
         RULE_UPDATE.append([int(i) for i in list_str_rule])
-
-
 def assert_rule(rule_list):
     len_list_rule = len(rule_list)
     for idx, key in enumerate(rule_list):
@@ -30,12 +28,10 @@ def assert_rule(rule_list):
                 next_key = rule_list[idx+1]
                 if next_key not in result:
                     return False
-
 def get_good_list(rule_list):
     dict_rule = {i: [j for j in RULE_ST.get(i, [0]) if j in rule_list] for i in rule_list}
     rule_list.sort(key=lambda key: len(dict_rule[key]), reverse=True)
     return rule_list
-
 @execution_time
 def get_summ(part=1):
     if part == 1:
