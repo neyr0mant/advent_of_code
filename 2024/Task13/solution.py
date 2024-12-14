@@ -17,19 +17,16 @@ for i in list_str:
         avt_data = []
 def calculate_min_time(prize_x_y, v1, v2):
     x, y = prize_x_y
-    v1x, v1y = v1
-    v2x, v2y = v2
+    v1x, v1y, v2x, v2y = v1[0],  v1[1], v2[0], v2[1]
     tv1, tv2 = symbols('tv1 tv2')
-    eq1 = Eq(v1x * tv1 + v2x * tv2, x)
-    eq2 = Eq(v1y * tv1 + v2y * tv2, y)
+    eq1, eq2 = Eq(v1x * tv1 + v2x * tv2, x), Eq(v1y * tv1 + v2y * tv2, y)
     solutions = solve((eq1, eq2), (tv1, tv2))
     if solutions:
-        tv1 = solutions[tv1]
-        tv2 = solutions[tv2]
+        tv1, tv2 = solutions[tv1], solutions[tv2]
         if all(["/" not in str(tv1),  tv1 >= 0, "/" not in str(tv2), tv2 >= 0]):
             return tv1, tv2
 def get_solve(part=1):
-    if part ==1:
+    if part == 1:
         return sum([sum([prize[0] * 3 + prize[1]]) for i in list_avt_data if
                     (prize := calculate_min_time(i[0], i[1], i[2]))])
     else:
