@@ -28,8 +28,6 @@ def calculate_min_time(prize_x_y, v1, v2):
         tv2 = solutions[tv2]
         if all(["/" not in str(tv1),  tv1 >= 0, "/" not in str(tv2), tv2 >= 0]):
             return tv1, tv2
-        else:
-            return None
 def get_solve(part=1):
     if part ==1:
         return sum([sum([prize[0] * 3 + prize[1]]) for i in list_avt_data if
