@@ -36,6 +36,7 @@ def get_solve(part=1):
             new_avt_data.append([(prize_x, prize_y), av_data[1], av_data[2]])
         return sum([sum([prize[0] * 3 + prize[1]]) for i in new_avt_data if
                     (prize := calculate_min_time(i[0], i[1], i[2]))])
-print(f"Решение части 1: {get_solve(part=1)}\nРешение части 2: {get_solve(part=2)}")
+print(f"Решение части 1: {get_solve()}")
+print(f"Решение части 2: {get_solve(part=2)}")
 
 
