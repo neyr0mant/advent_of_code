@@ -21,9 +21,9 @@ for av_data in list_avt_data_v1:
                         int(str('1' + '0' * (need_len - len(prize_y)-1) + prize_y)))
     list_avt_data_v2.append([(prize_x, prize_y), av_data[1], av_data[2]])
 def calculate_min_time(prize_x_y, v1, v2):
-    x, y = prize_x_y
+    prize_x, prize_y = prize_x_y
     v1x, v1y, v2x, v2y, tv1, tv2 = v1[0],  v1[1], v2[0], v2[1], symbols('tv1'), symbols('tv2')
-    eq1, eq2 = Eq(v1x * tv1 + v2x * tv2, x), Eq(v1y * tv1 + v2y * tv2, y)
+    eq1, eq2 = Eq(v1x * tv1 + v2x * tv2, prize_x), Eq(v1y * tv1 + v2y * tv2, prize_y)
     solutions = solve((eq1, eq2), (tv1, tv2))
     if solutions:
         tv1, tv2 = solutions[tv1], solutions[tv2]
