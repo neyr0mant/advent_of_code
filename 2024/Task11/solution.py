@@ -1,6 +1,6 @@
 #https://adventofcode.com/2024/day/11
 
-def get_next_list_stone(num):
+def get_next_list_stones(num):
     if num == 0:
         return [1]
     str_num = str(num)
@@ -10,8 +10,8 @@ def get_count_stones(list_stones, count_iter):
     start_stones = {stone: 1 for stone in list_stones}
     for _ in range(count_iter):
         next_stones = {}
-        for exist_stone, count in start_stones.items():
-            new_stones = get_next_list_stone(exist_stone)
+        for сur_stone, count in start_stones.items():
+            new_stones = get_next_list_stones(сur_stone)
             for stone in new_stones:
                 if stone in next_stones:
                     next_stones[stone] += count
