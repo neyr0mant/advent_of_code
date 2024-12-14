@@ -1,3 +1,4 @@
+#https://adventofcode.com/2024/day/5
 list_str = [i.strip("\n ") for i in open("input.txt")]
 from sympy import symbols, Eq, solve
 list_avt_data = []
