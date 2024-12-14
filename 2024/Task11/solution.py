@@ -1,17 +1,17 @@
 #https://adventofcode.com/2024/day/11
-def separation_stones(num):
+
+def get_next_list_stone(num):
     if num == 0:
         return [1]
     str_num = str(num)
     len_num = len(str_num)
     return [int(str_num[:len_num // 2]), int(str_num[len_num // 2:])] if len_num % 2 == 0 else [num * 2024]
-
 def get_count_stones(list_stones, count_iter):
     start_stones = {stone: 1 for stone in list_stones}
     for _ in range(count_iter):
         next_stones = {}
         for exist_stone, count in start_stones.items():
-            new_stones = separation_stones(exist_stone)
+            new_stones = get_next_list_stone(exist_stone)
             for stone in new_stones:
                 if stone in next_stones:
                     next_stones[stone] += count
