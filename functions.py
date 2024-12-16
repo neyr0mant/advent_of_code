@@ -42,7 +42,6 @@ class Matrix():
             x_max, y_max = self.get_rank_matrix(new_matrix)
             list_matrix = new_matrix
         print(f"""######## Матрица размером {x_max}x{y_max} ########""")
-        # определим самый длинный элемент, что при рисовании матрица не скукоживалась
         for i in list_matrix:
             list_print = " ".join([j for j in i])
             print(list_print)
