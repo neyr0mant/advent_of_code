@@ -3,7 +3,7 @@ def get_count_house(track_list, part =1):
     houses = {"santa": [(0, 0)], "robot": [(0, 0)]}
     for idx, i in enumerate(track_list):
         key = "santa" if part == 1 else ("santa" if idx % 2 == 0 else "robot")
-        last_house, last_list = houses[key][-1], houses[key]
+        last_house, last_list, new_house = houses[key][-1], houses[key], ()
         if i == "^":
             new_house = (last_house[0], last_house[1] + 1)
         elif i == "v":
