@@ -3,11 +3,12 @@ from functions import Matrix, execution_time
 list_str = [i.strip() for i in open("input.txt")]
 
 
-def generate_test_data(rank, count_rule = 5):
+def generate_test_data(rank, count_rule=5):
     import random
     list_index = [i for i in range(rank)]
     return [f"{random.choice(['turn on', 'turn off', 'toggle'])} {random.choice(list_index)},{random.choice(list_index)}"
             f" through {random.choice(list_index)},{random.choice(list_index)}" for _ in range(count_rule)]
+
 
 @execution_time
 def get_solve(rank, list_rule, part):
@@ -42,7 +43,7 @@ def get_solve(rank, list_rule, part):
         coordinate_for_change = []
         if x_max != x_min:
             if y_max != y_min:
-                [[coordinate_for_change.append([x, y]) for x in range(x_min, x_max+1)] for y in range(y_min, y_max+1)]
+                [coordinate_for_change.extend([[x, y] for x in range(x_min, x_max+1)]) for y in range(y_min, y_max+1)]
             else:
                 coordinate_for_change.extend([[x, y_max] for x in range(x_min, x_max+1)])
         else:
