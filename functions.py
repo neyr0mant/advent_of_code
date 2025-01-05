@@ -25,17 +25,19 @@ class Matrix:
     def get_rank_matrix(matrix: list):
         return len(matrix[0]), len(matrix)
 
-    def update_element(self, elem, x, y):
-        self.matrix[y][x] = elem
-
-    def update_list_element(self, data_for_change: dict):
+    def update_list_elements(self, data_for_change: dict):
         for elem, list_x_y in data_for_change.items():
             for x_y in list_x_y:
                 x, y = x_y
-                self.update_element(elem, x, y)
+                self.matrix[y][x] = elem
 
-    def __getitem__(self, x_y: tuple):
-        return self.matrix[x_y[1]][x_y[0]]
+    def __setitem__(self, x_y, val):
+        x, y = x_y
+        self.matrix[y][x] = val
+
+    def __getitem__(self, x_y):
+        x, y = x_y
+        return self.matrix[y][x]
 
     def find(self, elem: str):
         list_index = []

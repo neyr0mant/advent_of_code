@@ -14,8 +14,9 @@ def get_solve(rank, list_rule, part):
     for rule_str in list_rule:
         rule_key = [i for i in ["toggle", "turn off", "turn on"] if i in rule_str][0]
         coordinate = [[int(j) for j in i.split(",")] for i in rule_str.split(rule_key)[1].split("through")]
-        for y in range(coordinate[0][1], coordinate[1][1] + 1):
-            for x in range(coordinate[0][0], coordinate[1][0] + 1):
+        x_min, x_max, y_min, y_max = coordinate[0][0], coordinate[1][0], coordinate[0][1], coordinate[1][1]
+        for y in range(y_min, y_max + 1):
+            for x in range(x_min, x_max + 1):
                 bright, key = grid[x, y], None
                 if rule_key == "turn on":
                     key = 1 if part == 1 else bright + 1
@@ -26,10 +27,9 @@ def get_solve(rank, list_rule, part):
                         key = 0 if bright == 1 else 1
                     else:
                         key = bright + 2
-                grid.update_element(key, x, y)
+                grid[x, y] = key
     return sum([sum([x for x in x_list]) for x_list in grid.matrix])
 
 
 print(f"Решение части 1: {get_solve(1000,list_str, part=1)}")
 print(f"Решение части 2: {get_solve(1000,list_str, part=2)}")
-
