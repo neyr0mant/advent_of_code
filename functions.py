@@ -25,14 +25,14 @@ class Matrix:
     def get_rank_matrix(matrix: list):
         return len(matrix[0]), len(matrix)
 
-    def update_matrix_element(self, elem, x_y):
-        x, y = x_y
+    def update_element(self, elem, x, y):
         self.matrix[y][x] = elem
 
-    def update_matrix_list_data(self, data_for_change: dict):
+    def update_list_element(self, data_for_change: dict):
         for elem, list_x_y in data_for_change.items():
             for x_y in list_x_y:
-                self.update_matrix_element(elem, x_y)
+                x, y = x_y
+                self.update_element(elem, x, y)
 
     def __getitem__(self, x_y: tuple):
         return self.matrix[x_y[1]][x_y[0]]
