@@ -8,7 +8,7 @@ def execution_time(func):
         time_start = time.time()
         res = func(*args, **kwargs)
         time_finish = time.time()
-        print(f"Script execution time: {time_finish - time_start}.s")
+        print(f"Script execution time: {round(time_finish - time_start, 3)} sec.")
         return res
 
     return wrapped
