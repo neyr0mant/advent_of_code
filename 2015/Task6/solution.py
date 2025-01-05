@@ -23,10 +23,7 @@ def get_solve(rank, list_rule, part):
                 elif rule_key == "turn off":
                     key = 0 if part == 1 else bright - 1 if bright >= 1 else 0
                 elif rule_key == "toggle":
-                    if part == 1:
-                        key = 0 if bright == 1 else 1
-                    else:
-                        key = bright + 2
+                    key = 0 if (part == 1 and bright == 1) else 1 if part == 1 else bright + 2
                 grid[x, y] = key
     return sum([sum([x for x in x_list]) for x_list in grid.matrix])
 
