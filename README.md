@@ -1,5 +1,5 @@
-# Мои решения задач с AoC
-Репозиторий, где я храню свои решения задач с [Advent of Code](http://www.adventofcode.com)
+# Мои решения задач с [Advent of Code](http://www.adventofcode.com)
+Репозиторий, где я храню свои решения задач с новогоднего ивента [Advent of Code](http://www.adventofcode.com)
 
 Прогресс:
 
