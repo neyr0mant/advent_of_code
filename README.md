@@ -1,5 +1,5 @@
 # Мои решения задач с [Advent of Code](http://www.adventofcode.com)
-Репозиторий, где я храню свои решения задач с новогоднего ивента [Advent of Code](http://www.adventofcode.com)
+Репозиторий, где я решаю ~~пытаюсь решать~~ задачи с [Advent of Code](http://www.adventofcode.com)
 
 Прогресс:
 
@@ -13,3 +13,6 @@
 - [2022]
 - [[2023](2023)]
 - [[2024](2024)]
+
+
+![mem](mem.jpg)
