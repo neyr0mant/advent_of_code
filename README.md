@@ -3,7 +3,7 @@
 
 - [[2015](2015)]
 
-7*:white_check_mark:17*:x:
+:white_check_mark: :x:
 - [2016] 
 - [2017]
 - [2018]
