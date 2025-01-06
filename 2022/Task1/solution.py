@@ -2,8 +2,7 @@ dict_data, count_elf = {}, 0
 for str_ in open("input.txt"):
     str_ = str_.strip()
     if str_.isdigit():
-        old_data = dict_data.get(count_elf, 0)
-        dict_data[count_elf] = old_data + int(str_)
+        dict_data[count_elf] = dict_data.get(count_elf, 0) + int(str_)
     else:
         count_elf += 1
 print(f"Решение части 1: {max(list(dict_data.values()))}")
