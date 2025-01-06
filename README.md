@@ -3,8 +3,9 @@
 
 Мои скромные успехи
 
-[[2015](2015)] :white_check_mark::white_check_mark::white_check_mark::white_check_mark:
-:white_check_mark::white_check_mark::white_check_mark::x::x::x::x::x::x::x::x::x::x::x::x::x:
+[[2015](2015)] :negative_squared_cross_mark::negative_squared_cross_mark::negative_squared_cross_mark:
+:negative_squared_cross_mark::negative_squared_cross_mark::negative_squared_cross_mark::negative_squared_cross_mark:
+:x::x::x::x::x::x::x::x::x::x::x::x::x:
 
 [2016] :x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x:
 
@@ -14,7 +15,7 @@
 
 [2019] :x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x:
 
-[[2020](2020)] :x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::white_check_mark::x::x::x::x::x:
+[[2020](2020)] :x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::negative_squared_cross_mark::x::x::x::x::x:
 
 [2021] :x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x:
 
