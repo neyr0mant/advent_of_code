@@ -5,7 +5,7 @@
 
 [[2015](2015)] :negative_squared_cross_mark::negative_squared_cross_mark::negative_squared_cross_mark:
 :negative_squared_cross_mark::negative_squared_cross_mark::negative_squared_cross_mark::negative_squared_cross_mark:
-:x::x::x::x::x::x::x::x::x::x::x::x::x:
+:x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x:
 
 [2016] :x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x:
 
@@ -23,6 +23,10 @@
 
 [[2023](2023)] :x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x:
 
-[[2024](2024)] :x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x:
+[[2024](2024)]:negative_squared_cross_mark::negative_squared_cross_mark::negative_squared_cross_mark:
+:negative_squared_cross_mark::negative_squared_cross_mark::negative_squared_cross_mark::negative_squared_cross_mark:
+:x::x::negative_squared_cross_mark::negative_squared_cross_mark::x::negative_squared_cross_mark::x::x::x::x::x::x::x:
+
+:x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x::x:
 
 ![mem](mem.jpg)
