@@ -45,6 +45,6 @@
 ☑️ - решена первая часть
 ❌ - не решена ни одна часть
 
-Общий прогресс: ![](https://geps.dev/progress/10)
+Общий прогресс: ![](https://geps.dev/progress/11)
 
 <img src="pic.jpg" width="10000" height="500">
