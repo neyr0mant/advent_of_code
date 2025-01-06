@@ -1,9 +1,11 @@
 # Мои решения задач с [Advent of Code](http://www.adventofcode.com)
 Репозиторий, где я решаю ~~пытаюсь решать~~ задачи с [Advent of Code](http://www.adventofcode.com)
 
-- [[2015](2015)]
+Мои скромные успехи
 
-:white_check_mark: :x:
+[[2015](2015)] :white_check_mark::white_check_mark::white_check_mark::white_check_mark:
+:white_check_mark::white_check_mark::white_check_mark::x::x::x::x::x::x::x::x::x::x::x::x::x:
+
 - [2016] 
 - [2017]
 - [2018]
