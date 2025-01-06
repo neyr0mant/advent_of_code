@@ -21,7 +21,8 @@
 
 [2022] :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x:
 
-[[2023](2023)] :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x:
+[[2023](2023)] :white_check_mark: :white_check_mark: :white_check_mark: :x: :x: :white_check_mark: :white_check_mark: 
+:x: :white_check_mark: :white_check_mark: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :white_check_mark:
 
 [[2024](2024)] :white_check_mark: :white_check_mark: :white_check_mark: :white_check_mark: :white_check_mark: 
 :white_check_mark: :white_check_mark: :x: :x: :white_check_mark: :white_check_mark: :x: :white_check_mark: :x: :x: :x: 
