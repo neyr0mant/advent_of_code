@@ -4,7 +4,7 @@
 Мои скромные успехи
 
 [[2015](2015)] :white_check_mark: :white_check_mark: :white_check_mark: :white_check_mark: :white_check_mark: 
-:white_check_mark: :white_check_mark: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x:
+:white_check_mark: :white_check_mark: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x:![](https://geps.dev/progress/30)
 
 [2016] :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x: :x:
 
@@ -28,5 +28,4 @@
 :white_check_mark: :white_check_mark: :x: :x: :white_check_mark: :white_check_mark: :x: :white_check_mark: :x: :x: :x: 
 :x: :x: :x: :x: :x: :x: :x: :x: :x:
 
-
-![mem](mem.jpg)
+<img src="pic.jpg" width="10000" height="500">
