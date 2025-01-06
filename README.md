@@ -1,4 +1,4 @@
-# Мои решения задач с [Advent of Code](http://www.adventofcode.com)
+# Решения задач с [Advent of Code](http://www.adventofcode.com)
 Репозиторий, где я пытаюсь решать ~~решаю~~ задачи с [Advent of Code](http://www.adventofcode.com)
 
 Мои скромные успехи
