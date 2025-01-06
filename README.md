@@ -1,5 +1,5 @@
-# Мои решения задач с [Advent of Code](http://www.adventofcode.com)
-Репозиторий, где я решаю ~~пытаюсь решать~~ задачи с [Advent of Code](http://www.adventofcode.com)
+# Репозиторий, где я пытаюсь решать ~~решаю~~ задачи с [Advent of Code](http://www.adventofcode.com)
+
 
 Мои скромные успехи
 
