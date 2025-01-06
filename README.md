@@ -2,7 +2,7 @@
 Репозиторий, где я пытаюсь решать ~~решаю~~ задачи с [Advent of Code](http://www.adventofcode.com)
 
 
-[20155 решения](2015)![](https://geps.dev/progress/28)
+[2015 решения](2015)![](https://geps.dev/progress/28)
 
 [2015 условия](https://adventofcode.com/2015)
 
