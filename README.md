@@ -26,8 +26,8 @@
 ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ✅ ❌ ❌ ❌ ❌ ❌ ❌
 
 [2021](2021)  
-![](https://geps.dev/progress/0)
-❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
+![](https://geps.dev/progress/4)
+✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
 
 [2022](2022)  
 ![](https://geps.dev/progress/0)
@@ -45,6 +45,6 @@
 ☑️ - решена первая часть
 ❌ - не решена ни одна часть
 
-Общий прогресс: ![](https://geps.dev/progress/11)
+Общий прогресс: ![](https://geps.dev/progress/12)
 
 <img src="pic.jpg" width="10000" height="500">
