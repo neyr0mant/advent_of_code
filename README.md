@@ -34,7 +34,7 @@
 [2020 условия](https://adventofcode.com/2020)
 
 [2020 решения](2020)  
-![](https://geps.dev/progress/0)
+![](https://geps.dev/progress/4)
 ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ✅ ❌ ❌ ❌ ❌ ❌ ❌
 
 [2021 условия](https://adventofcode.com/2021)
