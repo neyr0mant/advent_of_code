@@ -1,5 +1,12 @@
 # Решения задач с [Advent of Code](http://www.adventofcode.com)
-Репозиторий, где я пытаюсь решать ~~решаю~~ задачи с [Advent of Code](http://www.adventofcode.com)
+Репозиторий, где я пытаюсь решать ~~решаю~~ задачи с [Advent of Code](http://www.adventofcode.com). Провожу челендж сам 
+для себя - сколько смогу решить задач за год.
+
+<details><summary>История</summary>
+
+   1. 01.01.2025 - 43, 8.6 %
+   2. 06.01.2025 - 61, 12,2 %
+</details>
 
 [2015](2015)                        
 ![](https://geps.dev/progress/32)
