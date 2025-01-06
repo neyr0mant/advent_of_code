@@ -4,8 +4,8 @@
 [2015 условия](https://adventofcode.com/2015)
 
 [2015 решения](2015)                        
-![](https://geps.dev/progress/28)
-✅ ✅ ✅ ✅ ✅ ✅ ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
+![](https://geps.dev/progress/32)
+✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
 
 [2016 условия](https://adventofcode.com/2016)
 
