@@ -28,4 +28,6 @@
 
 ❌ - не решена ни одна часть
 
+Общий прогресс: ![](https://geps.dev/progress/10)
+
 <img src="pic.jpg" width="10000" height="500">
