@@ -12,8 +12,8 @@ def get_solve(list_rule, part=1):
                      "A": (1,1),"B":(2,1), "C":(3,1),
                      "D": (2,0)}
     rule_phone_invert_p2 = {val: key for key, val in rule_phone_p2.items()}
-    rule_phone, rule_phone_invert = (rule_phone_p1, rule_phone_invert_p1) if part ==1 else (rule_phone_p2,
-                                                                                            rule_phone_invert_p2)
+    rule_phone, rule_phone_invert = (rule_phone_p1, rule_phone_invert_p1) if \
+        (part == 1) else (rule_phone_p2, rule_phone_invert_p2)
     start_num = 5
     num_out = ""
     for rule in list_rule:
@@ -27,6 +27,7 @@ def get_solve(list_rule, part=1):
                 continue
         num_out += str(start_num)
     return num_out
+
 print(f"Решение части 1: {get_solve(list_data)}")
 print(f"Решение части 2: {get_solve(list_data, part=2)}")
 
