@@ -1,7 +1,7 @@
 list_move = [i.replace(" ", "").split(",") for i in open("input.txt")][0]
 def get_answer(list_move_, part=1):
     x_santa, y_santa, direction, set_santa = 0, 0, (0, 1), set(),
-    for idx, data in enumerate(list_move_):
+    for data in list_move_:
         rule = [i for i in ["L", "R"] if i in data][0]
         direction = (-direction[1], direction[0]) if rule == "L" \
             else (direction[1], -direction[0])
