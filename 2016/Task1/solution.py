@@ -10,12 +10,12 @@ def get_answer(list_move_, part=1):
         x_santa += count*direction[0]
         y_santa += count*direction[1]
         if part == 2:
-            if dir_x := direction[0]:
-                list_step = [(x_santa_old + i*dir_x, y_santa_old) for i in range(count)]
-            else:
-                dir_y = direction[1]
-                list_step = [(x_santa_old, y_santa_old + i*dir_y) for i in range(count)]
-            for step in list_step:
+            for i in range(count):
+                if dir_ := direction[0]:
+                    step = (x_santa_old + i*dir_, y_santa_old)
+                else:
+                    dir_ = direction[1]
+                    step = (x_santa_old, y_santa_old + i*dir_)
                 if step in set_santa:
                     x_santa, y_santa = step
                     break
