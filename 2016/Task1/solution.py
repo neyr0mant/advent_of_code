@@ -14,8 +14,7 @@ def get_answer(list_move_, part=1):
                 if dir_ := direction[0]:
                     step = (x_santa_old + i*dir_, y_santa_old)
                 else:
-                    dir_ = direction[1]
-                    step = (x_santa_old, y_santa_old + i*dir_)
+                    step = (x_santa_old, y_santa_old + i*direction[1])
                 if step in set_santa:
                     x_santa, y_santa = step
                     break
