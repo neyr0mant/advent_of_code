@@ -9,7 +9,7 @@ def get_solve(list_triangle, part=1):
             if idx_data + 3 > len_all:
                 break
             if idx_data % 3 == 0:
-                t1, t2 ,t3 = ([data[0], list_triangle[idx_data+1][0], list_triangle[idx_data+2][0]],
+                t1, t2, t3 = ([data[0], list_triangle[idx_data+1][0], list_triangle[idx_data+2][0]],
                               [data[1], list_triangle[idx_data+1][1], list_triangle[idx_data+2][1]],
                               [data[2], list_triangle[idx_data+1][2], list_triangle[idx_data+2][2]])
                 list_convert.extend([t1, t2, t3])
@@ -19,6 +19,8 @@ def get_solve(list_triangle, part=1):
         if all([a < b+c, b < a+c, c < a+b]):
             count += 1
     return count
+
+
 print(f"Решение части 1: {get_solve(list_data)}")
 print(f"Решение части 2: {get_solve(list_data, part=2)}")
 
