@@ -9,12 +9,9 @@ def get_solve(path, part=1):
         game, prize = game.strip().split(), 0
         if part == 1:
             player_1, player_2 = game[0], convert_dict[game[1]]
-            # прибавим стоимость выбора
             prize = game_rule[player_2]["figure"]
-            # ничья
             if player_1 == player_2:
                 prize += 3
-            # победа
             elif player_1 != game_rule[player_2]["L"]:
                 prize += 6
         else:
