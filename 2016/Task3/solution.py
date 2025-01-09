@@ -16,7 +16,7 @@ def get_solve(list_triangle, part=1):
         list_triangle = list_convert
     for triangle in list_triangle:
         a, b, c = triangle
-        if all([a < b+c, b < a+c, c < a+b]):
+        if all([a < b + c, b < a + c, c < a + b]):
             count += 1
     return count
 
