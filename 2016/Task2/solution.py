@@ -1,5 +1,7 @@
 #https://adventofcode.com/2016/day/2
 list_data = [i.strip() for i in open("input.txt")]
+from functions import execution_time
+@execution_time
 def get_solve(list_rule, part=1):
     rule_move = {"R": (1, 0), "L": (-1, 0), "U": (0, 1), "D": (0, -1)}
     rule_phone_p1 = {1: (0,2), 2: (1, 2), 3: (2, 2),
@@ -14,8 +16,7 @@ def get_solve(list_rule, part=1):
     rule_phone_invert_p2 = {val: key for key, val in rule_phone_p2.items()}
     rule_phone, rule_phone_invert = (rule_phone_p1, rule_phone_invert_p1) if \
         (part == 1) else (rule_phone_p2, rule_phone_invert_p2)
-    start_num = 5
-    num_out = ""
+    start_num, num_out = 5, ""
     for rule in list_rule:
         for str_rule in rule:
             start_place = rule_phone[start_num]
