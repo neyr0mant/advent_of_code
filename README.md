@@ -11,11 +11,6 @@
 | 11.01.2025 | 87/500       | ![](https://geps.dev/progress/17) |
 </details>
 
-<details><summary>Заметки</summary>
-
-1. [AoC 2016, день 1й](https://adventofcode.com/2016/day/1) - самая прикольная среди всех задач 1 го дня)
-</details>
-
 [2015](2015)                        
 ![](https://geps.dev/progress/32)
 ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
