@@ -13,7 +13,6 @@
 
 [2015](2015)           
 ![](https://geps.dev/progress/32)
-
 [✅](2015/Task1/solution.py "Задача 1")  [✅](2015/Task2/solution.py "Задача 2") [✅](2015/Task3/solution.py "Задача 3")
 [✅](2015/Task4/solution.py "Задача 4") [✅](2015/Task5/solution.py "Задача 5") [✅](2015/Task6/solution.py "Задача 6")
 [✅](2015/Task7/solution.py "Задача 7") [✅](2015/Task8/solution.py "Задача 8") [❌](2015/Task9/solution.py "Задача 9") 
@@ -26,7 +25,6 @@
 
 [2016](2016)  
 ![](https://geps.dev/progress/24)
-
 [✅](2016/Task1/solution.py "Задача 1")  [✅](2016/Task2/solution.py "Задача 2") [✅](2016/Task3/solution.py "Задача 3")
 [❌](2016/Task4/solution.py "Задача 4") [✅](2016/Task5/solution.py "Задача 5") [✅](2016/Task6/solution.py "Задача 6")
 [✅](2016/Task7/solution.py "Задача 7") [❌](2016/Task8/solution.py "Задача 8") [❌](2016/Task9/solution.py "Задача 9") 
@@ -39,7 +37,6 @@
 
 [2017](2017)  
 ![](https://geps.dev/progress/8)
-
 [✅](2017/Task1/solution.py "Задача 1")  [✅](2017/Task2/solution.py "Задача 2") [❌](2017/Task3/solution.py "Задача 3")
 [❌](2017/Task4/solution.py "Задача 4") [❌](2017/Task5/solution.py "Задача 5") [❌](2017/Task6/solution.py "Задача 6")
 [❌](2017/Task7/solution.py "Задача 7") [❌](2017/Task8/solution.py "Задача 8") [❌](2017/Task9/solution.py "Задача 9") 
@@ -52,15 +49,39 @@
 
 [2018](2018)  
 ![](https://geps.dev/progress/8)
-✅ ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
+[✅](2018/Task1/solution.py "Задача 1")  [✅](2018/Task2/solution.py "Задача 2") [❌](2018/Task3/solution.py "Задача 3")
+[❌](2018/Task4/solution.py "Задача 4") [❌](2018/Task5/solution.py "Задача 5") [❌](2018/Task6/solution.py "Задача 6")
+[❌](2018/Task7/solution.py "Задача 7") [❌](2018/Task8/solution.py "Задача 8") [❌](2018/Task9/solution.py "Задача 9") 
+[❌](2018/Task10/solution.py "Задача 10") [❌](2018/Task11/solution.py "Задача 11") [❌](2018/Task12/solution.py "Задача 12")
+[❌](2018/Task13/solution.py "Задача 13") [❌](2018/Task14/solution.py "Задача 14")[❌](2018/Task15/solution.py "Задача 15")
+[❌](2018/Task16/solution.py "Задача 16") [❌](2018/Task17/solution.py "Задача 17") [❌](2018/Task18/solution.py "Задача 18")
+[❌](2018/Task19/solution.py "Задача 19") [❌](2018/Task20/solution.py "Задача 20") [❌](2018/Task21/solution.py "Задача 21") 
+[❌](2018/Task22/solution.py "Задача 22")[❌](2018/Task23/solution.py "Задача 23") [❌](2018/Task24/solution.py "Задача 24")
+[❌](2018/Task25/solution.py "Задача 25")
 
 [2019](2019)  
 ![](https://geps.dev/progress/8)
-✅ ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
+[✅](2019/Task1/solution.py "Задача 1")  [✅](2019/Task2/solution.py "Задача 2") [❌](2019/Task3/solution.py "Задача 3")
+[❌](2019/Task4/solution.py "Задача 4") [❌](2019/Task5/solution.py "Задача 5") [❌](2019/Task6/solution.py "Задача 6")
+[❌](2019/Task7/solution.py "Задача 7") [❌](2019/Task8/solution.py "Задача 8") [❌](2019/Task9/solution.py "Задача 9") 
+[❌](2019/Task10/solution.py "Задача 10") [❌](2019/Task11/solution.py "Задача 11") [❌](2019/Task12/solution.py "Задача 12")
+[❌](2019/Task13/solution.py "Задача 13") [❌](2019/Task14/solution.py "Задача 14")[❌](2019/Task15/solution.py "Задача 15")
+[❌](2019/Task16/solution.py "Задача 16") [❌](2019/Task17/solution.py "Задача 17") [❌](2019/Task18/solution.py "Задача 18")
+[❌](2019/Task19/solution.py "Задача 19") [❌](2019/Task20/solution.py "Задача 20") [❌](2019/Task21/solution.py "Задача 21") 
+[❌](2019/Task22/solution.py "Задача 22")[❌](2019/Task23/solution.py "Задача 23") [❌](2019/Task24/solution.py "Задача 24")
+[❌](2019/Task25/solution.py "Задача 25")
 
 [2020](2020)  
 ![](https://geps.dev/progress/12)
-✅ ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ✅ ❌ ❌ ❌ ❌ ❌ ❌
+[✅](2020/Task1/solution.py "Задача 1")  [✅](2020/Task2/solution.py "Задача 2") [❌](2020/Task3/solution.py "Задача 3")
+[❌](2020/Task4/solution.py "Задача 4") [❌](2020/Task5/solution.py "Задача 5") [❌](2020/Task6/solution.py "Задача 6")
+[❌](2020/Task7/solution.py "Задача 7") [❌](2020/Task8/solution.py "Задача 8") [❌](2020/Task9/solution.py "Задача 9") 
+[❌](2020/Task10/solution.py "Задача 10") [❌](2020/Task11/solution.py "Задача 11") [❌](2020/Task12/solution.py "Задача 12")
+[❌](2020/Task13/solution.py "Задача 13") [❌](2020/Task14/solution.py "Задача 14")[❌](2020/Task15/solution.py "Задача 15")
+[❌](2020/Task16/solution.py "Задача 16") [❌](2020/Task17/solution.py "Задача 17") [✅](2020/Task18/solution.py "Задача 18")
+[❌](2020/Task19/solution.py "Задача 19") [❌](2020/Task20/solution.py "Задача 20") [❌](2020/Task21/solution.py "Задача 21") 
+[❌](2020/Task22/solution.py "Задача 22")[❌](2020/Task23/solution.py "Задача 23") [❌](2020/Task24/solution.py "Задача 24")
+[❌](2020/Task25/solution.py "Задача 25")
 
 [2021](2021)  
 ![](https://geps.dev/progress/8)
