@@ -22,6 +22,7 @@
 [❌](2015/Task16/solution.py "Задача 16") [❌](2015/Task17/solution.py "Задача 17") [❌](2015/Task18/solution.py "Задача 18")
 [❌](2015/Task19/solution.py "Задача 19") [❌](2015/Task20/solution.py "Задача 20") [❌](2015/Task21/solution.py "Задача 21") 
 [❌](2015/Task22/solution.py "Задача 22")[❌](2015/Task23/solution.py "Задача 23") [❌](2015/Task24/solution.py "Задача 24")
+[❌](2015/Task25/solution.py "Задача 25")
 
 [2016](https://adventofcode.com/2016)  
 ![](https://geps.dev/progress/24)
@@ -33,6 +34,7 @@
 [❌](2016/Task16/solution.py "Задача 16") [❌](2016/Task17/solution.py "Задача 17") [❌](2016/Task18/solution.py "Задача 18")
 [❌](2016/Task19/solution.py "Задача 19") [❌](2016/Task20/solution.py "Задача 20") [❌](2016/Task21/solution.py "Задача 21") 
 [❌](2016/Task22/solution.py "Задача 22")[❌](2016/Task23/solution.py "Задача 23") [❌](2016/Task24/solution.py "Задача 24")
+[❌](2015/Task25/solution.py "Задача 25")
 
 [2017](https://adventofcode.com/2017)  
 ![](https://geps.dev/progress/8)
@@ -44,6 +46,7 @@
 [❌](2017/Task16/solution.py "Задача 16") [❌](2017/Task17/solution.py "Задача 17") [❌](2017/Task18/solution.py "Задача 18")
 [❌](2017/Task19/solution.py "Задача 19") [❌](2017/Task20/solution.py "Задача 20") [❌](2017/Task21/solution.py "Задача 21") 
 [❌](2017/Task22/solution.py "Задача 22")[❌](2017/Task23/solution.py "Задача 23") [❌](2017/Task24/solution.py "Задача 24")
+[❌](2015/Task25/solution.py "Задача 25")
 
 [2018](https://adventofcode.com/2018)  
 ![](https://geps.dev/progress/8)
@@ -55,6 +58,7 @@
 [❌](2018/Task16/solution.py "Задача 16") [❌](2018/Task17/solution.py "Задача 17") [❌](2018/Task18/solution.py "Задача 18")
 [❌](2018/Task19/solution.py "Задача 19") [❌](2018/Task20/solution.py "Задача 20") [❌](2018/Task21/solution.py "Задача 21") 
 [❌](2018/Task22/solution.py "Задача 22")[❌](2018/Task23/solution.py "Задача 23") [❌](2018/Task24/solution.py "Задача 24")
+[❌](2015/Task25/solution.py "Задача 25")
 
 [2019](https://adventofcode.com/2019)  
 ![](https://geps.dev/progress/8)
@@ -66,6 +70,7 @@
 [❌](2019/Task16/solution.py "Задача 16") [❌](2019/Task17/solution.py "Задача 17") [❌](2019/Task18/solution.py "Задача 18")
 [❌](2019/Task19/solution.py "Задача 19") [❌](2019/Task20/solution.py "Задача 20") [❌](2019/Task21/solution.py "Задача 21") 
 [❌](2019/Task22/solution.py "Задача 22")[❌](2019/Task23/solution.py "Задача 23") [❌](2019/Task24/solution.py "Задача 24")
+[❌](2015/Task25/solution.py "Задача 25")
 
 [2020](https://adventofcode.com/2020)  
 ![](https://geps.dev/progress/12)
@@ -77,6 +82,7 @@
 [❌](2020/Task16/solution.py "Задача 16") [❌](2020/Task17/solution.py "Задача 17") [✅](2020/Task18/solution.py "Задача 18")
 [❌](2020/Task19/solution.py "Задача 19") [❌](2020/Task20/solution.py "Задача 20") [❌](2020/Task21/solution.py "Задача 21") 
 [❌](2020/Task22/solution.py "Задача 22")[❌](2020/Task23/solution.py "Задача 23") [❌](2020/Task24/solution.py "Задача 24")
+[❌](2015/Task25/solution.py "Задача 25")
 
 [2021](https://adventofcode.com/2021)  
 ![](https://geps.dev/progress/8)
@@ -88,6 +94,7 @@
 [❌](2021/Task16/solution.py "Задача 16") [❌](2021/Task17/solution.py "Задача 17") [❌](2021/Task18/solution.py "Задача 18")
 [❌](2021/Task19/solution.py "Задача 19") [❌](2021/Task20/solution.py "Задача 20") [❌](2021/Task21/solution.py "Задача 21") 
 [❌](2021/Task22/solution.py "Задача 22")[❌](2021/Task23/solution.py "Задача 23") [❌](2021/Task24/solution.py "Задача 24")
+[❌](2015/Task25/solution.py "Задача 25")
 
 [2022](https://adventofcode.com/2022)  
 ![](https://geps.dev/progress/12)
@@ -99,6 +106,7 @@
 [❌](2022/Task16/solution.py "Задача 16") [❌](2022/Task17/solution.py "Задача 17") [❌](2022/Task18/solution.py "Задача 18")
 [❌](2022/Task19/solution.py "Задача 19") [❌](2022/Task20/solution.py "Задача 20") [❌](2022/Task21/solution.py "Задача 21") 
 [❌](2022/Task22/solution.py "Задача 22")[❌](2022/Task23/solution.py "Задача 23") [❌](2022/Task24/solution.py "Задача 24")
+[❌](2015/Task25/solution.py "Задача 25")
 
 [2023](https://adventofcode.com/2023)  
 ![](https://geps.dev/progress/26)
@@ -110,6 +118,7 @@
 [❌](2023/Task16/solution.py "Задача 16") [❌](2023/Task17/solution.py "Задача 17") [❌](2023/Task18/solution.py "Задача 18")
 [❌](2023/Task19/solution.py "Задача 19") [❌](2023/Task20/solution.py "Задача 20") [❌](2023/Task21/solution.py "Задача 21") 
 [❌](2023/Task22/solution.py "Задача 22")[❌](2023/Task23/solution.py "Задача 23") [☑️](2023/Task24/solution.py "Задача 24")
+[❌](2015/Task25/solution.py "Задача 25")
 
 [2024](https://adventofcode.com/2024)  
 ![](https://geps.dev/progress/32)
@@ -121,6 +130,7 @@
 [❌](2024/Task16/solution.py "Задача 16") [❌](2024/Task17/solution.py "Задача 17") [❌](2024/Task18/solution.py "Задача 18")
 [❌](2024/Task19/solution.py "Задача 19") [❌](2024/Task20/solution.py "Задача 20") [❌](2024/Task21/solution.py "Задача 21") 
 [❌](2024/Task22/solution.py "Задача 22")[❌](2024/Task23/solution.py "Задача 23") [❌](2024/Task24/solution.py "Задача 24")
+[❌](2015/Task25/solution.py "Задача 25")
  
 ✅ - задача решена полностью
 ☑️ - решена первая часть 

@@ -5,13 +5,15 @@ for idx, data in enumerate(list_data, start=1):
     data_split = data.split("[")
     data_card, control_summ = data_split[0], data_split[1][:-1]
     data_split_card = data_card.split("-")
-    id_card = int(data_split_card[-1])
+    data_card, id_card = "".join(data_split_card[:-1]),  int(data_split_card[-1])
     List_dict_data.append({"data_card": data_card, "id_card": id_card, "control_summ": control_summ})
 
 def get_solve(List_dict_data):
     summ_id = 0
     for card in List_dict_data:
-        dict_count = {i[0]: len(i) for i in card["control_summ"] if len(i) > 1}
+        data_card = card["data_card"]
+        dict_count = {i: data_card.count(i) for i in data_card}
+        control_summ = card["control_summ"]
         print()
 
 
