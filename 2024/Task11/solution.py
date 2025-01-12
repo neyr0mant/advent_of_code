@@ -1,11 +1,13 @@
 #https://adventofcode.com/2024/day/11
-
+from functions import  execution_time
 def get_next_list_stones(num):
     if num == 0:
         return [1]
     str_num = str(num)
     len_num = len(str_num)
     return [int(str_num[:len_num // 2]), int(str_num[len_num // 2:])] if len_num % 2 == 0 else [num * 2024]
+
+@execution_time
 def get_count_stones(list_stones, count_iter):
     start_stones = {stone: 1 for stone in list_stones}
     for _ in range(count_iter):

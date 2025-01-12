@@ -11,8 +11,9 @@
 | 11.01.2025 | 89/500        | ![](https://geps.dev/progress/18) |
 </details>
 
-[2015](2015)                        
+[2015](2015)           
 ![](https://geps.dev/progress/32)
+
 [✅](2015/Task1/solution.py "Задача 1")  [✅](2015/Task2/solution.py "Задача 2") [✅](2015/Task3/solution.py "Задача 3")
 [✅](2015/Task4/solution.py "Задача 4") [✅](2015/Task5/solution.py "Задача 5") [✅](2015/Task6/solution.py "Задача 6")
 [✅](2015/Task7/solution.py "Задача 7") [✅](2015/Task8/solution.py "Задача 8") [❌](2015/Task9/solution.py "Задача 9") 
@@ -25,7 +26,6 @@
 
 [2016](2016)  
 ![](https://geps.dev/progress/24)
-✅ ✅ ✅ ❌ ✅ ✅ ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
 
 [✅](2016/Task1/solution.py "Задача 1")  [✅](2016/Task2/solution.py "Задача 2") [✅](2016/Task3/solution.py "Задача 3")
 [❌](2016/Task4/solution.py "Задача 4") [✅](2016/Task5/solution.py "Задача 5") [✅](2016/Task6/solution.py "Задача 6")
@@ -39,7 +39,16 @@
 
 [2017](2017)  
 ![](https://geps.dev/progress/8)
-✅ ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
+
+[✅](2017/Task1/solution.py "Задача 1")  [✅](2017/Task2/solution.py "Задача 2") [❌](2017/Task3/solution.py "Задача 3")
+[❌](2017/Task4/solution.py "Задача 4") [❌](2017/Task5/solution.py "Задача 5") [❌](2017/Task6/solution.py "Задача 6")
+[❌](2017/Task7/solution.py "Задача 7") [❌](2017/Task8/solution.py "Задача 8") [❌](2017/Task9/solution.py "Задача 9") 
+[❌](2017/Task10/solution.py "Задача 10") [❌](2017/Task11/solution.py "Задача 11") [❌](2017/Task12/solution.py "Задача 12")
+[❌](2017/Task13/solution.py "Задача 13") [❌](2017/Task14/solution.py "Задача 14")[❌](2017/Task15/solution.py "Задача 15")
+[❌](2017/Task16/solution.py "Задача 16") [❌](2017/Task17/solution.py "Задача 17") [❌](2017/Task18/solution.py "Задача 18")
+[❌](2017/Task19/solution.py "Задача 19") [❌](2017/Task20/solution.py "Задача 20") [❌](2017/Task21/solution.py "Задача 21") 
+[❌](2017/Task22/solution.py "Задача 22")[❌](2017/Task23/solution.py "Задача 23") [❌](2017/Task24/solution.py "Задача 24")
+[❌](2017/Task25/solution.py "Задача 25")
 
 [2018](2018)  
 ![](https://geps.dev/progress/8)
