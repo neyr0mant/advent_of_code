@@ -13,7 +13,13 @@
 
 [2015](2015)                        
 ![](https://geps.dev/progress/32)
-✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
+[✅](2015/Task1/solution.py) [✅](2015/Task2/solution.py) [✅](2015/Task3/solution.py)
+[✅](2015/Task4/solution.py) [✅](2015/Task5/solution.py) [✅](2015/Task6/solution.py)
+[✅](2015/Task7/solution.py) [✅](2015/Task8/solution.py) [❌](2015/Task9/solution.py) [❌](2015/Task10/solution.py)
+[❌](2015/Task11/solution.py) [❌](2015/Task12/solution.py) [❌](2015/Task13/solution.py) [❌](2015/Task14/solution.py)
+[❌](2015/Task15/solution.py) [❌](2015/Task16/solution.py) [❌](2015/Task17/solution.py) [❌](2015/Task18/solution.py)
+[❌](2015/Task19/solution.py) [❌](2015/Task20/solution.py) [❌](2015/Task21/solution.py) [❌](2015/Task22/solution.py)
+[❌](2015/Task23/solution.py) [❌](2015/Task24/solution.py) [❌](2015/Task25/solution.py)
 
 [2016](2016)  
 ![](https://geps.dev/progress/24)
