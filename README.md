@@ -97,7 +97,15 @@
 
 [2022](2022)  
 ![](https://geps.dev/progress/12)
-✅ ✅ ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
+[✅](2022/Task1/solution.py "Задача 1")  [✅](2022/Task2/solution.py "Задача 2") [✅](2022/Task3/solution.py "Задача 3")
+[❌](2022/Task4/solution.py "Задача 4") [❌](2022/Task5/solution.py "Задача 5") [❌](2022/Task6/solution.py "Задача 6")
+[❌](2022/Task7/solution.py "Задача 7") [❌](2022/Task8/solution.py "Задача 8") [❌](2022/Task9/solution.py "Задача 9") 
+[❌](2022/Task10/solution.py "Задача 10") [❌](2022/Task11/solution.py "Задача 11") [❌](2022/Task12/solution.py "Задача 12")
+[❌](2022/Task13/solution.py "Задача 13") [❌](2022/Task14/solution.py "Задача 14")[❌](2022/Task15/solution.py "Задача 15")
+[❌](2022/Task16/solution.py "Задача 16") [❌](2022/Task17/solution.py "Задача 17") [❌](2022/Task18/solution.py "Задача 18")
+[❌](2022/Task19/solution.py "Задача 19") [❌](2022/Task20/solution.py "Задача 20") [❌](2022/Task21/solution.py "Задача 21") 
+[❌](2022/Task22/solution.py "Задача 22")[❌](2022/Task23/solution.py "Задача 23") [❌](2022/Task24/solution.py "Задача 24")
+[❌](2022/Task25/solution.py "Задача 25")
 
 [2023](2023)  
 ![](https://geps.dev/progress/34)
