@@ -109,11 +109,27 @@
 
 [2023](2023)  
 ![](https://geps.dev/progress/34)
-✅ ✅ ✅ ☑️ ☑️ ❌ ✅ ✅ ✅ ✅ ☑️ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ☑️
+[✅](2023/Task1/solution.py "Задача 1")  [✅](2023/Task2/solution.py "Задача 2") [✅](2023/Task3/solution.py "Задача 3")
+[☑️](2023/Task4/solution.py "Задача 4") [☑️](2023/Task5/solution.py "Задача 5") [✅](2023/Task6/solution.py "Задача 6")
+[✅](2023/Task7/solution.py "Задача 7") [✅](2023/Task8/solution.py "Задача 8") [✅](2023/Task9/solution.py "Задача 9") 
+[☑️](2023/Task10/solution.py "Задача 10") [❌](2023/Task11/solution.py "Задача 11") [❌](2023/Task12/solution.py "Задача 12")
+[❌](2023/Task13/solution.py "Задача 13") [❌](2023/Task14/solution.py "Задача 14")[❌](2023/Task15/solution.py "Задача 15")
+[❌](2023/Task16/solution.py "Задача 16") [❌](2023/Task17/solution.py "Задача 17") [❌](2023/Task18/solution.py "Задача 18")
+[❌](2023/Task19/solution.py "Задача 19") [❌](2023/Task20/solution.py "Задача 20") [❌](2023/Task21/solution.py "Задача 21") 
+[❌](2023/Task22/solution.py "Задача 22")[❌](2023/Task23/solution.py "Задача 23") [❌](2023/Task24/solution.py "Задача 24")
+[☑️](2023/Task25/solution.py "Задача 25")
 
 [2024](2024)  
 ![](https://geps.dev/progress/32)
-✅ ✅ ✅ ✅ ✅ ☑️ ✅ ❌ ✅ ✅ ❌ ✅ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌ ❌
+[✅](2024/Task1/solution.py "Задача 1")  [✅](2024/Task2/solution.py "Задача 2") [✅](2024/Task3/solution.py "Задача 3")
+[✅](2024/Task4/solution.py "Задача 4") [✅](2024/Task5/solution.py "Задача 5") [☑️](2024/Task6/solution.py "Задача 6")
+[✅](2024/Task7/solution.py "Задача 7") [❌](2024/Task8/solution.py "Задача 8") [✅](2024/Task9/solution.py "Задача 9") 
+[✅](2024/Task10/solution.py "Задача 10") [❌](2024/Task11/solution.py "Задача 11") [✅](2024/Task12/solution.py "Задача 12")
+[❌](2024/Task13/solution.py "Задача 13") [❌](2024/Task14/solution.py "Задача 14")[❌](2024/Task15/solution.py "Задача 15")
+[❌](2024/Task16/solution.py "Задача 16") [❌](2024/Task17/solution.py "Задача 17") [❌](2024/Task18/solution.py "Задача 18")
+[❌](2024/Task19/solution.py "Задача 19") [❌](2024/Task20/solution.py "Задача 20") [❌](2024/Task21/solution.py "Задача 21") 
+[❌](2024/Task22/solution.py "Задача 22")[❌](2024/Task23/solution.py "Задача 23") [❌](2024/Task24/solution.py "Задача 24")
+[❌](2024/Task25/solution.py "Задача 25")
 
 ✅ - задача решена полностью
 ☑️ - решена первая часть
