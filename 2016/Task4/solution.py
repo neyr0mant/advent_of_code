@@ -1,7 +1,7 @@
 #https://adventofcode.com/2016/day/3
 list_data = [i.strip() for i in open("input.txt")]
 List_dict_data = []
-for idx, data in enumerate(list_data, start=1):
+for data in list_data:
     data_split = data.split("[")
     data_card, control_summ = data_split[0], data_split[1][:-1]
     data_split_card = data_card.split("-")
@@ -14,14 +14,19 @@ def get_solve(List_dict_data):
         data_card = card["data_card"]
         dict_count = {i: data_card.count(i) for i in data_card}
         control_summ = card["control_summ"]
-        print()
+        list_assert_digit = [key for key, val in dict_count.items() if val != 1]
+        list_assert_digit.sort(key=lambda x: dict_count[x], reverse=True)
+        list_assert_altha = sorted([key for key, val in dict_count.items() if val == 1])
+        assert_str = "".join(list_assert_digit)
+        if len(assert_str) >= 5:
+            if assert_str[:5] == control_summ:
+                summ_id += card["id_card"]
+            continue
+        assert_str = assert_str + "".join(list_assert_altha[:5-len(assert_str)])
+        if assert_str == control_summ:
+            summ_id += card["id_card"]
+    return summ_id
 
-
-
-
-list_ = ["c", "b", "a"]
-list_.sort()
-print(list_)
 print(f"Решение части 1: {get_solve(List_dict_data)}")
 # print(f"Решение части 2: {get_solve(list_data, part=2)}")
 
