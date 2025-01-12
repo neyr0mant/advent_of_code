@@ -19,16 +19,17 @@ def assert_ssl(str_in):
     pattern = r'([\w])([\w])\1'
     list_split = re.split(r'\[|\]', str_in)
     list_out, list_ins = list_split[::2], list_split[1::2]
+    str_out, str_ins = "".join([i for i in list_out]), "".join([i for i in list_ins])
     set_out_aba, set_out_bab = set(), set()
     [[set_out_aba.add(f"{j[0]}{j[1]}{j[0]}") for j in re.findall(pattern, i)] for i in list_out]
     [[set_out_bab.add(f"{j[0]}{j[1]}{j[0]}") for j in re.findall(pattern, i)] for i in list_ins]
     for i in set_out_aba:
         bab = f"{i[1]}{i[0]}{i[1]}"
-        if [j for j in list_ins if bab in j]:
+        if bab in str_ins:
             return 1
     for i in set_out_bab:
         aba = f"{i[1]}{i[0]}{i[1]}"
-        if [j for j in list_out if aba in j]:
+        if aba in str_out:
             return 1
     return 0
 
