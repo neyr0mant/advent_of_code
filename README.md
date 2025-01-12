@@ -13,7 +13,7 @@
 
 [2015](2015)                        
 ![](https://geps.dev/progress/32)
-[✅](2015/Task1/solution.py) [✅](2015/Task2/solution.py) [✅](2015/Task3/solution.py)
+[✅](2015/Task1/solution.py "Задача 1")  [✅](2015/Task2/solution.py) [✅](2015/Task3/solution.py)
 [✅](2015/Task4/solution.py) [✅](2015/Task5/solution.py) [✅](2015/Task6/solution.py)
 [✅](2015/Task7/solution.py) [✅](2015/Task8/solution.py) [❌](2015/Task9/solution.py) [❌](2015/Task10/solution.py)
 [❌](2015/Task11/solution.py) [❌](2015/Task12/solution.py) [❌](2015/Task13/solution.py) [❌](2015/Task14/solution.py)
