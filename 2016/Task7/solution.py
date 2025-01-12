@@ -34,7 +34,7 @@ def assert_ssl(str_in):
     return 0
 
 
-def get_solve(data_in, part = 1):
+def get_solve(data_in, part=1):
     return sum([assert_tsl(i) for i in data_in] if part == 1 else [assert_ssl(i) for i in data_in])
 print(f"Решение части 1: {get_solve(list_data)}")
 print(f"Решение части 2: {get_solve(list_data, part=2)}")
