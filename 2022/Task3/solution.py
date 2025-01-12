@@ -1,4 +1,4 @@
-#https://adventofcode.com/2016/day/3
+#https://adventofcode.com/2022/day/3
 list_data = [i.strip() for i in open("input.txt")]
 
 start_num = 347991
