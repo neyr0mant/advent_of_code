@@ -13,9 +13,9 @@ for data in list_data:
 
 def convert_str(str_in, count_step):
     altha = "abcdefghijklmnopqrstuvwxyz"
-    str_out, count_circle = "", count_step % len(altha)
+    str_out, remainder = "", count_step % len(altha)
     for i in str_in:
-        new_index = altha.index(i) + count_circle
+        new_index = altha.index(i) + remainder
         if new_index > altha.index("z"):
             new_index -= len(altha)
         str_out += altha[new_index]
