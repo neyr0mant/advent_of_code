@@ -1,5 +1,4 @@
-#Решения нет
-
+#https://adventofcode.com/2023/day/4
 list_in = [i.strip() for i in open("input.txt")]
 dict_data = {}
 for idx, game in enumerate(list_in):
