@@ -22,19 +22,18 @@ def convert_str(str_in, count_step):
     return str_out
 
 
-
 def get_solve(List_dict_data, part=1):
     solve = 0
     for room in List_dict_data:
         if part == 1:
-            data_room_str,control_summ = room["data_room_str"], room["control_summ"]
+            data_room_str, control_summ = room["data_room_str"], room["control_summ"]
             assert_dict = sorted({i: data_room_str.count(i) for i in data_room_str}.items(),
                                  key=lambda x: (-x[1], x[0]))
             assert_summ = "".join([i[0] for i in assert_dict[:5]])
             if assert_summ == control_summ:
                 solve += room["id_room"]
         else:
-            rule_list = ["northpole", "object","storage"]
+            rule_list = ["northpole", "object", "storage"]
             data_room_list = room['data_room_list']
             if len(data_room_list) != len(rule_list):
                 continue
