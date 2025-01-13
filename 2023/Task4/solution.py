@@ -12,7 +12,7 @@ for idx, game in enumerate(list_in):
 def get_solve(data_in, part = 1):
     solve, list_card = 0, list(data_in.keys())
     for card, data_card in data_in.items():
-        if part ==1:
+        if part == 1:
             list_win = [i for i in data_card["hand"] if i in data_card["win"]]
             solve += int(2**(len(list_win)-1))
         else:
