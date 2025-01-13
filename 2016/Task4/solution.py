@@ -15,10 +15,10 @@ def convert_str(str_in, count_step):
     altha = "abcdefghijklmnopqrstuvwxyz"
     str_out, count_circle = "", count_step % len(altha)
     for i in str_in:
-        new_index = ord(i) + count_circle
-        if new_index > ord('z'):
+        new_index = altha.index(i) + count_circle
+        if new_index > altha.index("z"):
             new_index -= len(altha)
-        str_out += chr(new_index)
+        str_out += altha[new_index]
     return str_out
 
 
