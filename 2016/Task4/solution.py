@@ -7,22 +7,46 @@ for data in list_data:
     data_split_room = data_room.split("-")
     data_room_str, id_card = "".join(data_split_room[:-1]),  int(data_split_room[-1])
     List_dict_data.append({"data_room_str": data_room_str, "id_room": id_card, "control_summ": control_summ,
-                           "data_card_list": data_split_room[:-1]})
+                           "data_room_list": data_split_room[:-1]})
 
-def get_solve(List_dict_data):
-    summ_id = 0
+
+
+def convert_str(str_in, count_step):
+    altha = "abcdefghijklmnopqrstuvwxyz"
+    str_out, count_circle = "", count_step % len(altha)
+    for i in str_in:
+        new_index = ord(i) + count_circle
+        if new_index > ord('z'):
+            new_index -= len(altha)
+        str_out += chr(new_index)
+    return str_out
+
+
+
+def get_solve(List_dict_data, part=1):
+    solve = 0
     for room in List_dict_data:
-        data_room_str = room["data_room_str"]
-        control_summ = room["control_summ"]
-        assert_dict = sorted({i: data_room_str.count(i) for i in data_room_str}.items(),
-                             key=lambda x: (-x[1], x[0]))
-        assert_summ = "".join([i[0] for i in assert_dict[:5]])
-        if assert_summ == control_summ:
-            summ_id += room["id_room"]
-    return summ_id
-
+        if part == 1:
+            data_room_str,control_summ = room["data_room_str"], room["control_summ"]
+            assert_dict = sorted({i: data_room_str.count(i) for i in data_room_str}.items(),
+                                 key=lambda x: (-x[1], x[0]))
+            assert_summ = "".join([i[0] for i in assert_dict[:5]])
+            if assert_summ == control_summ:
+                solve += room["id_room"]
+        else:
+            rule_list = ["northpole", "object","storage"]
+            data_room_list = room['data_room_list']
+            if len(data_room_list) != len(rule_list):
+                continue
+            for idx, rule in enumerate(rule_list):
+                if len(rule) != len(data_room_list[idx]):
+                    continue
+            list_convert = [convert_str(i, room["id_room"]) for i in room["data_room_list"]]
+            if list_convert == rule_list:
+                solve = room["id_room"]
+    return solve
 print(f"Решение части 1: {get_solve(List_dict_data)}")
-# print(f"Решение части 2: {get_solve(list_data, part=2)}")
+print(f"Решение части 2: {get_solve(List_dict_data, part=2)}")
 
 
 

@@ -1,5 +1,5 @@
 # Решения задач с [Advent of Code](http://www.adventofcode.com)
-Репозиторий c моими решениями задач с [Advent of Code](http://www.adventofcode.com). В планах прорешать все
+Репозиторий с моими решениями задач с [Advent of Code](http://www.adventofcode.com). В планах прорешать все
 задачи (какие смогу решить конечно😃) за все годы с этого ивента.
 
 <details><summary>История</summary>
@@ -24,9 +24,9 @@
 [❌](2015/Task25/solution.py "Задача 25")
 
 [2016](https://adventofcode.com/2016)  
-![](https://geps.dev/progress/24)
+![](https://geps.dev/progress/28)
 [✅](2016/Task1/solution.py "Задача 1")  [✅](2016/Task2/solution.py "Задача 2") [✅](2016/Task3/solution.py "Задача 3")
-[❌](2016/Task4/solution.py "Задача 4") [✅](2016/Task5/solution.py "Задача 5") [✅](2016/Task6/solution.py "Задача 6")
+[✅](2016/Task4/solution.py "Задача 4") [✅](2016/Task5/solution.py "Задача 5") [✅](2016/Task6/solution.py "Задача 6")
 [✅](2016/Task7/solution.py "Задача 7") [❌](2016/Task8/solution.py "Задача 8") [❌](2016/Task9/solution.py "Задача 9") 
 [❌](2016/Task10/solution.py "Задача 10") [❌](2016/Task11/solution.py "Задача 11") [❌](2016/Task12/solution.py "Задача 12")
 [❌](2016/Task13/solution.py "Задача 13") [❌](2016/Task14/solution.py "Задача 14")[❌](2016/Task15/solution.py "Задача 15")
