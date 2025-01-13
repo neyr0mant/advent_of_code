@@ -16,7 +16,7 @@ def convert_str(str_in, count_step):
     str_out, remainder = "", count_step % len(altha)
     for i in str_in:
         new_index = altha.index(i) + remainder
-        if new_index > altha.index("z"):
+        if new_index > len(altha) - 1:
             new_index -= len(altha)
         str_out += altha[new_index]
     return str_out
