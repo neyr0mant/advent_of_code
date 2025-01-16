@@ -1,15 +1,15 @@
 from functions import execution_time
 def split_number_string(number_string):
     result = []
-    current_number = ""
-    for char in number_string:
-        current_number += char
-        if len(current_number) > 1 and (len(current_number) == 1 or char != current_number[-2]):
-            if current_number:
-                result.append(current_number[:-1])
-            current_number = char
-    if current_number:
-        result.append(current_number)
+    cur_number = ""
+    for str_num in number_string:
+        cur_number += str_num
+        if len(cur_number) > 1 and (len(cur_number) == 1 or str_num != cur_number[-2]):
+            if cur_number:
+                result.append(cur_number[:-1])
+            cur_number = str_num
+    if cur_number:
+        result.append(cur_number)
     return result
 @execution_time
 def get_solve(num_start, count_iter_need=0):
