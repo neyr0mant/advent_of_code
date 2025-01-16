@@ -8,7 +8,7 @@ def get_solve(list_data, vectors):
     for vector in vectors:
         x_v, y_v = vector
         count = 0
-        for y in range(0, matrix.y_max, y_v):
+        for _ in range(0, matrix.y_max, y_v):
             x = start_place[0] + x_v
             y = start_place[1] + y_v
             if x >= matrix.x_max:
