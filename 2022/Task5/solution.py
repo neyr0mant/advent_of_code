@@ -1,4 +1,4 @@
-#https://adventofcode.com/2022/day/3
+#https://adventofcode.com/2022/day/5
 from copy import deepcopy
 data_box, list_data, rule_list = {}, [], []
 for i in open("input.txt"):
