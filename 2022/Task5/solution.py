@@ -25,8 +25,7 @@ def get_solve(dict_data,rule_list, part=1):
         data_move = from_data[::-1][:count_box]
         to_data.extend(data_move) if part == 1 else to_data.extend(data_move[::-1])
         dict_data[box_from], dict_data[box_to] = from_new, to_data
-    key_sort = sorted(list(dict_data.keys()))
-    return "".join([dict_data[key][-1] for key in key_sort])
+    return "".join([dict_data[key][-1] for key in dict_data])
 
 print(f"Решение части 1: {get_solve(data_box, rule_list)}")
 print(f"Решение части 2: {get_solve(data_box, rule_list, part=2)}")
