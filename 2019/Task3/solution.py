@@ -33,7 +33,5 @@ def get_solve(list_data, part=1):
         list_assert_2 = [sum([get_cabling(j, i) for j in [wire_1,wire_2]]) for i in list_assert_1]
     return min([abs(i[0]) + abs(i[1]) for i in list_assert_1]) if part ==1 else min(list_assert_2)
 
-
-
 print(f"Решение части 1: {get_solve(list_data)}")
 print(f"Решение части 2: {get_solve(list_data, part=2)}")
