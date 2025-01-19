@@ -13,6 +13,9 @@ def execution_time(func):
     return wrapped
 
 
+alphabet = {"lower": "abcdefghijklmnopqrstuvwxyz", "upper": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"}
+
+
 class Matrix:
     def __init__(self, list_data: list):
         assert (len([i for i in list_data if len(i) == len(list_data[0])])
