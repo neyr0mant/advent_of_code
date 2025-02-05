@@ -5,11 +5,11 @@ from functions import execution_time
 @execution_time
 def get_solve(list_data, part=1):
     list_data = deepcopy(list_data)
-    start_index, count = 0, 0
+    start_index, count, max_index = 0, 0, len(list_data)-1
     while True:
         bounce = list_data[start_index]
         new_index = start_index+bounce
-        if new_index < 0 or new_index > len(list_data)-1:
+        if new_index < 0 or new_index > max_index:
             count += 1
             break
         if part == 1:
