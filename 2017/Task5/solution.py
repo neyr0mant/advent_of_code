@@ -15,10 +15,7 @@ def get_solve(list_data, part=1):
         if part == 1:
             list_data[start_index] += 1
         else:
-            if bounce >= 3:
-                list_data[start_index] -= 1
-            else:
-                list_data[start_index] += 1
+            list_data[start_index] += -1 if bounce >= 3 else 1
         count += 1
         start_index = new_index
     return count
