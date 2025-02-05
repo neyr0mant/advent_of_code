@@ -1,5 +1,8 @@
 from copy import deepcopy
 list_data = [int(i.strip()) for i in open("input.txt")]
+from functions import execution_time
+
+@execution_time
 def get_solve(list_data, part=1):
     list_data = deepcopy(list_data)
     start_index, count = 0, 0
@@ -9,7 +12,7 @@ def get_solve(list_data, part=1):
         if new_index < 0 or new_index > len(list_data)-1:
             count += 1
             break
-        if part ==1:
+        if part == 1:
             list_data[start_index] += 1
         else:
             if bounce >= 3:
