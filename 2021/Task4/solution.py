@@ -1,5 +1,4 @@
 from functions import Matrix, execution_time
-from copy import deepcopy
 dict_data, table = {}, []
 for i in open("input.txt"):
     i = i.strip()
@@ -24,7 +23,7 @@ def get_sum_table(table):
     return summ
 @execution_time
 def get_solve(dict_data):
-    dict_data, list_win = deepcopy(dict_data), []
+    list_win = []
     for num in dict_data["list_num"]:
         list_win_idx = []
         for idx, table in enumerate(dict_data["list_table"]):
