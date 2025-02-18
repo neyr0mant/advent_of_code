@@ -1,7 +1,7 @@
 list_data = [[int(j) for j in i.split(",")] for i in open("input.txt")][0]
 from copy import deepcopy
 def get_rule(rule):
-    instruction_str = str(rule).zfill(5)
+    instruction_str = "0"*5 + str(rule)
     opcode = int(instruction_str[-2:])
     modes = [int(instruction_str[-3]), int(instruction_str[-4]), int(instruction_str[-5])]
     return opcode, modes
