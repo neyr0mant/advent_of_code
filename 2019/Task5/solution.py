@@ -3,7 +3,7 @@ from copy import deepcopy
 def get_rule(rule):
     instruction_str = str(rule).zfill(5)
     opcode = int(instruction_str[-2:])
-    modes = [int(instruction_str[-3]), int(instruction_str[-4]), int(instruction_str[-5])]  # Режимы параметров
+    modes = [int(instruction_str[-3]), int(instruction_str[-4]), int(instruction_str[-5])]
     return opcode, modes
 
 def get_param(list_data, index, mode):
@@ -20,14 +20,12 @@ def get_solve(list_data, input_value):
         if opcode == 99:
             break
         elif opcode == 1:
-            param1 = get_param(list_data, i + 1, modes[0])
-            param2 = get_param(list_data, i + 2, modes[1])
+            param1, param2 = get_param(list_data, i + 1, modes[0]), get_param(list_data, i + 2, modes[1])
             result_addr = list_data[i + 3]
             list_data[result_addr] = param1 + param2
             i += 4
         elif opcode == 2:
-            param1 = get_param(list_data, i + 1, modes[0])
-            param2 = get_param(list_data, i + 2, modes[1])
+            param1, param2 = get_param(list_data, i + 1, modes[0]), get_param(list_data, i + 2, modes[1])
             result_addr = list_data[i + 3]
             list_data[result_addr] = param1 * param2
             i += 4
@@ -40,28 +38,24 @@ def get_solve(list_data, input_value):
             list_out.append(param1)
             i += 2
         elif opcode == 5:
-            param1 = get_param(list_data, i + 1, modes[0])
-            param2 = get_param(list_data, i + 2, modes[1])
+            param1,param2 = get_param(list_data, i + 1, modes[0]), get_param(list_data, i + 2, modes[1])
             if param1 != 0:
                 i = param2
             else:
                 i += 3
         elif opcode == 6:
-            param1 = get_param(list_data, i + 1, modes[0])
-            param2 = get_param(list_data, i + 2, modes[1])
+            param1, param2 = get_param(list_data, i + 1, modes[0]), get_param(list_data, i + 2, modes[1])
             if param1 == 0:
                 i = param2
             else:
                 i += 3
         elif opcode == 7:
-            param1 = get_param(list_data, i + 1, modes[0])
-            param2 = get_param(list_data, i + 2, modes[1])
+            param1, param2 = get_param(list_data, i + 1, modes[0]), get_param(list_data, i + 2, modes[1])
             result_addr = list_data[i + 3]
             list_data[result_addr] = 1 if param1 < param2 else 0
             i += 4
         elif opcode == 8:
-            param1 = get_param(list_data, i + 1, modes[0])
-            param2 = get_param(list_data, i + 2, modes[1])
+            param1, param2 = get_param(list_data, i + 1, modes[0]), get_param(list_data, i + 2, modes[1])
             result_addr = list_data[i + 3]
             list_data[result_addr] = 1 if param1 == param2 else 0
             i += 4
