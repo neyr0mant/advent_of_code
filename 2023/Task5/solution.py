@@ -1,7 +1,7 @@
 from functions import execution_time
 def get_data():
     list_str = [i.strip().split('\n')[0] for i in open("input.txt")]
-    list_seeds, all_maps, cur_map = list(map(int, list_str[0].split(': ')[1].split())), [], []
+    list_seeds, all_maps, cur_map = [int(i) for i in list_str[0].split(': ')[1].split()], [], []
     for str_ in list_str[2:]:
         if str_.endswith(':'):
             continue
@@ -10,16 +10,16 @@ def get_data():
                 all_maps.append(cur_map)
                 cur_map = []
         else:
-            cur_map.append(list(map(int, str_.split())))
+            cur_map.append([int(i) for i in str_.split()])
     if cur_map:
         all_maps.append(cur_map)
     return list_seeds, all_maps
 
-def apply_map(value, map_data):
-    for dest_start, src_start, length in map_data:
-        if src_start <= value < src_start + length:
-            return dest_start + (value - src_start)
-    return value
+def apply_map(key, map_data):
+    for dest_start, src_start, count in map_data:
+        if src_start <= key < src_start + count:
+            return dest_start + (key - src_start)
+    return key
 
 def apply_map_to_range(start, length, map_data):
     ranges = [(start, start + length)]
@@ -30,8 +30,8 @@ def apply_map_to_range(start, length, map_data):
             intersect_start = max(r_start, start)
             intersect_end = min(r_end, start + len_range)
             if intersect_start < intersect_end:
-                offset = dest_start - start
-                result_ranges.append((intersect_start + offset, intersect_end + offset))
+                diff = dest_start - start
+                result_ranges.append((intersect_start + diff, intersect_end + diff))
                 if r_start < intersect_start:
                     new_ranges.append((r_start, intersect_start))
                 if intersect_end < r_end:
@@ -45,14 +45,14 @@ def apply_map_to_range(start, length, map_data):
 def get_solve(list_seed, all_maps, part =1):
     if part == 1:
         for map_data in all_maps:
-            list_seed = [apply_map(place, map_data) for place in list_seed]
+            list_seed = [apply_map(key, map_data) for key in list_seed]
         return min(list_seed)
     else:
         list_range = []
         for i in range(0, len(list_seed), 2):
             start, len_range = list_seed[i], list_seed[i + 1]
             list_range.append((start, len_range))
-        cur_ranges = [(start, start + length) for start, length in list_range]
+        cur_ranges = [(start, start + count) for start, count in list_range]
         for map_data in all_maps:
             new_ranges = []
             for start, end in cur_ranges:
