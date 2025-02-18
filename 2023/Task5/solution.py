@@ -15,12 +15,6 @@ def get_data():
         all_maps.append(cur_map)
     return list_seeds, all_maps
 
-def apply_map(key, map_data):
-    for dest_start, src_start, count in map_data:
-        if src_start <= key < src_start + count:
-            return dest_start + (key - src_start)
-    return key
-
 def apply_map_to_range(start, length, map_data):
     ranges = [(start, start + length)]
     result_ranges = []
@@ -44,6 +38,11 @@ def apply_map_to_range(start, length, map_data):
 @execution_time
 def get_solve(list_seed, all_maps, part =1):
     if part == 1:
+        def apply_map(key, map_data):
+            for dest_start, src_start, count in map_data:
+                if src_start <= key < src_start + count:
+                    return dest_start + (key - src_start)
+            return key
         for map_data in all_maps:
             list_seed = [apply_map(key, map_data) for key in list_seed]
         return min(list_seed)
@@ -61,6 +60,7 @@ def get_solve(list_seed, all_maps, part =1):
             cur_ranges = new_ranges
         return min(start for start, end in cur_ranges)
 
-list_seeds, all_maps = get_data()
-print(f"Решение задания 1:{get_solve(list_seeds,all_maps, part=1)}")
-print(f"Решение задания 2:{get_solve(list_seeds,all_maps, part=2)}")
+
+list_seed, all_maps = get_data()
+print(f"Решение задания 1:{get_solve(list_seed, all_maps, part=1)}")
+print(f"Решение задания 2:{get_solve(list_seed, all_maps, part=2)}")
