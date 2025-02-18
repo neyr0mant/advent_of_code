@@ -50,8 +50,8 @@ def get_solve(list_seed, all_maps, part =1):
     else:
         list_range = []
         for i in range(0, len(list_seed), 2):
-            start, length = list_seed[i], list_seed[i + 1]
-            list_range.append((start, length))
+            start, len_range = list_seed[i], list_seed[i + 1]
+            list_range.append((start, len_range))
         cur_ranges = [(start, start + length) for start, length in list_range]
         for map_data in all_maps:
             new_ranges = []
@@ -59,8 +59,7 @@ def get_solve(list_seed, all_maps, part =1):
                 mapped_ranges = apply_map_to_range(start, end - start, map_data)
                 new_ranges.extend(mapped_ranges)
             cur_ranges = new_ranges
-        min_value = min(start for start, end in cur_ranges)
-        return min_value
+        return min(start for start, end in cur_ranges)
 
 list_seeds, all_maps = get_data()
 print(f"Решение задания 1:{get_solve(list_seeds,all_maps, part=1)}")
