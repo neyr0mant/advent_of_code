@@ -65,8 +65,8 @@ def get_solve(list_data, input_value):
             result_addr = list_data[i + 3]
             list_data[result_addr] = 1 if param1 == param2 else 0
             i += 4
-    return list_out
+    return list_out[-1]
 
 
-print(f"Решение части 1: {get_solve(list_data, 1)[-1]}")
-print(f"Решение части 2: {get_solve(list_data, 5)[-1]}")
+print(f"Решение части 1: {get_solve(list_data, 1)}")
+print(f"Решение части 2: {get_solve(list_data, 5)}")
