@@ -1,5 +1,4 @@
 import sys
-from functions import execution_time
 sys.setrecursionlimit(20000)
 list_data = [[int(j) for j in i.strip().split()] for i in open("input.txt")][0]
 def get_solve(list_data, count_iter, all_configuration):
@@ -8,10 +7,8 @@ def get_solve(list_data, count_iter, all_configuration):
         return count_iter, list_data
     all_configuration.add(str_list)
     max_num, len_list = max(list_data), len(list_data)
-    assert max_num, "В списке одни нули!"
     index_max = list_data.index(max_num)
-    count_circle = max_num // len_list
-    remainder = max_num % len_list
+    count_circle, remainder = max_num // len_list, max_num % len_list
     l_list, r_list = list_data[:index_max], list_data[index_max+1:]
     new_list = r_list + l_list + [0]
     new_list = [i+count_circle for i in new_list]
