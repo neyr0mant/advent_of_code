@@ -14,7 +14,8 @@ def get_solve(list_data, count_iter, all_configuration):
     new_list = [i+count_circle for i in new_list]
     if remainder:
         new_list = [i + 1 if idx < remainder else i for idx, i in enumerate(new_list)]
-    l_list_new, r_list_new, new_num = new_list[len(r_list): len_list-1], new_list[:len(r_list)], new_list[-1]
+    l_list_new, r_list_new, new_num = (new_list[len(r_list): len_list-1],
+                                       new_list[:len(r_list)], new_list[-1])
     new_list = l_list_new + [new_num] + r_list_new
     count_iter += 1
     return get_solve(new_list, count_iter=count_iter, all_configuration=all_configuration)
