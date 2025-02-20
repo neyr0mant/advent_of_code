@@ -22,6 +22,6 @@ def get_solve(list_data, count_iter, all_configuration):
 
 
 solve_1, list_data_v2 = get_solve(list_data, 0, set())
-solve2 = get_solve(list_data_v2, 0, set())[0]
+solve_2 = get_solve(list_data_v2, 0, set())[0]
 print(f"Решение части 1: {solve_1}")
-print(f"Решение части 2: {solve2}")
+print(f"Решение части 2: {solve_2}")
