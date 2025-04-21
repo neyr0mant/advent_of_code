@@ -26,4 +26,4 @@ def get_solve(part =1):
 
 
 print(f"Решение части 1: {get_solve()}")
-print(f"Решение части 1: {get_solve(part=2)}")
+print(f"Решение части 2: {get_solve(part=2)}")
