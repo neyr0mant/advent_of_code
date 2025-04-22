@@ -26,9 +26,9 @@ def get_solve(part = 1):
     max_prod, combination_max,list_prod_max = 0, [], []
     for combination in all_combinations:
         for combination_ in itertools.permutations(combination):
-            list_prod = [0, 0, 0,0] if part ==1 else [0, 0, 0, 0, 0]
+            list_prod = [0, 0, 0, 0] if part == 1 else [0, 0, 0, 0, 0]
             for idx, i in enumerate(combination_):
-                data = list_data[idx][:4] if part ==1 else list_data[idx]
+                data = list_data[idx][:4] if part == 1 else list_data[idx]
                 for idx_, data_ in enumerate(data):
                     list_prod[idx_] += i*data_
             if all([i > 0 for i in list_prod]):
