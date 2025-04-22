@@ -32,14 +32,12 @@ def get_solve(part = 1):
                 for idx_, data_ in enumerate(data):
                     list_prod[idx_] += i*data_
             if all([i > 0 for i in list_prod]):
-                if part == 1:
-                    cur_prod = math.prod(list_prod)
-                    if cur_prod >= max_prod:
+                cur_prod = math.prod(list_prod) if part == 1 else math.prod(list_prod[:4])
+                if cur_prod >= max_prod:
+                    if part == 1:
                         max_prod = cur_prod
-                else:
-                    cur_prod = math.prod(list_prod[:4])
-                    if list_prod[-1] == 500:
-                        if cur_prod >= max_prod:
+                    else:
+                        if list_prod[-1] == 500:
                             max_prod = cur_prod
     return max_prod
 
