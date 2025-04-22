@@ -5,8 +5,10 @@ list_str = [i.strip() for i in open("input.txt")]
 list_data = []
 for i in list_str:
     list_split = i.replace(",", "").split()
-    list_data.append([int(list_split[2]),  int(list_split[4]), int(list_split[6]),int(list_split[8]) ,
+    list_data.append([int(list_split[2]),  int(list_split[4]), int(list_split[6]),int(list_split[8]),
                       int(list_split[10])])
+
+
 def generate_combinations(target_sum, num_count, current_combination=[], start=1):
     combinations = []
     if len(current_combination) == num_count:
@@ -16,6 +18,7 @@ def generate_combinations(target_sum, num_count, current_combination=[], start=1
     for i in range(start, target_sum):
         combinations.extend(generate_combinations(target_sum, num_count, current_combination + [i], i))
     return combinations
+
 
 @execution_time
 def get_solve(part = 1):
