@@ -32,12 +32,12 @@ def get_solve(part = 1):
                 if part == 1:
                     cur_prod = math.prod(list_prod)
                     if cur_prod >= max_prod:
-                        max_prod,combination_max, list_prod_max = cur_prod, combination_,list_prod
+                        max_prod = cur_prod
                 else:
                     cur_prod = math.prod(list_prod[:4])
                     if list_prod[-1] == 500:
                         if cur_prod >= max_prod:
-                            max_prod, combination_max, list_prod_max = cur_prod, combination_, list_prod
+                            max_prod = cur_prod
     return max_prod
 
 
