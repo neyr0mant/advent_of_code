@@ -11,7 +11,7 @@ def get_count_neighbour(coordinate, grid):
                 count += 1
     return count
 
-
+@execution_time
 def get_solve(count_iter, part=1):
     grid = deepcopy(grid_main)
     if part != 1:
