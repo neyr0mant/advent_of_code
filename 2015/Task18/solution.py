@@ -36,7 +36,7 @@ def get_solve(count_iter, part=1):
                     key_update = 1
                 grid[x_y[0], x_y[1]] = key_update
         grid.draw(factor=4)
-    grid.get_gif()
+    grid.get_gif(name_gif=f"Гифка {part}")
     return sum([sum([x for x in x_list]) for x_list in grid.matrix])
 
 
