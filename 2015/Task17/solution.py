@@ -1,5 +1,5 @@
-list_data = [int(i.strip()) for i in open("input.txt")]
 import itertools
+list_data = [int(i.strip()) for i in open("input.txt")]
 def get_solve(part = 1):
     res = 0
     for i in range(1, len(list_data)+1):
