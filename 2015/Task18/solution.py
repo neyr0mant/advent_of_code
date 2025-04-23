@@ -35,6 +35,8 @@ def get_solve(count_iter, part=1):
                 if part != 1 and x_y in [[0,0], [0, grid.y_max-1], [grid.x_max-1, 0], [grid.x_max-1,grid.y_max-1]]:
                     key_update = 1
                 grid[x_y[0], x_y[1]] = key_update
+        grid.draw(factor=4)
+    grid.get_gif()
     return sum([sum([x for x in x_list]) for x_list in grid.matrix])
 
 
