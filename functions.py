@@ -1,6 +1,7 @@
 import time
 from copy import deepcopy
-import threading
+from PIL import Image, ImageDraw
+import uuid
 
 
 def execution_time(func):
@@ -22,6 +23,7 @@ class Matrix:
                 == len(list_data)), "Это не матрица!Не все списки равны по длине!"
         self.matrix = list_data
         self.x_max, self.y_max = self.get_rank_matrix(self.matrix)
+        self.streams = []
 
     @staticmethod
     def get_rank_matrix(matrix: list):
@@ -70,5 +72,24 @@ class Matrix:
                 x, y = coordinate
                 new_matrix[y][x] = elem
         return new_matrix
+
+
+    def draw(self, factor=3, symbol_dif = 1) -> Image:
+        size_x = factor * self.x_max
+        size_y = factor * self.y_max
+        im = Image.new('RGB', (size_x, size_y), '#1a1a1a')
+        draw = ImageDraw.Draw(im)
+        for y in range(self.y_max):
+            for x in range(self.y_max):
+                x_size = x * factor
+                y_size = y * factor
+                if self.matrix[x][y] == symbol_dif:
+                    draw.point([(x_size, y_size)], '#ffa126')
+        self.streams.append(im)
+
+    def get_gif(self, name_gif=None):
+        name_gif = name_gif if name_gif else f'{uuid.uuid4()}.gif'
+        self.streams[0].save(name_gif, save_all=True,
+                             append_images=self.streams[1:])
 
 
