@@ -1,7 +1,7 @@
 from functions import Matrix
 import re
 list_str = [i.strip() for i in open("input.txt")]
-matrix = Matrix([["." for _ in range(50)] for _ in range(6)])
+matrix = Matrix([[" " for _ in range(50)] for _ in range(6)])
 def get_solve():
     for data in list_str:
         data_digit = [int(i) for i in re.findall(r'\d+', data)]
@@ -21,6 +21,5 @@ def get_solve():
                 for idx, x_list in enumerate(matrix.matrix):
                     x_list[data_digit[0]] = new_list_data[idx]
     return sum([len([x for x in x_list if x != "."]) for x_list in matrix.matrix])
-matrix = Matrix([[" " for i in x_list if i == "."] for x_list in matrix.matrix])
 print(f"Решение части 1: {get_solve()}")
 print(f"Решение части 1: {matrix.print_matrix()}")
