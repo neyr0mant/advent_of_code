@@ -2,8 +2,7 @@ from functions import Matrix
 import re
 list_str = [i.strip() for i in open("input.txt")]
 matrix = Matrix([["." for _ in range(50)] for _ in range(6)])
-def get_solve(part =1):
-    screen = [['.'] * 50 for _ in range(6)]
+def get_solve():
     for data in list_str:
         data_digit = [int(i) for i in re.findall(r'\d+', data)]
         if "rect" in data:
