@@ -85,7 +85,7 @@
 [❌](2015/Task25/solution.py "Задача 25")
 
 [2021](https://adventofcode.com/2021)  
-![](https://geps.dev/progress/16)
+![](https://geps.dev/progress/24)
 [✅](2021/Task1/solution.py "Задача 1")  [✅](2021/Task2/solution.py "Задача 2") [✅](2021/Task3/solution.py "Задача 3")
 [✅](2021/Task4/solution.py "Задача 4") [✅](2021/Task5/solution.py "Задача 5") [✅](2021/Task6/solution.py "Задача 6")
 [❌](2021/Task7/solution.py "Задача 7") [❌](2021/Task8/solution.py "Задача 8") [❌](2021/Task9/solution.py "Задача 9") 
