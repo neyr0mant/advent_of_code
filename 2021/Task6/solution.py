@@ -7,8 +7,7 @@ def get_solve(count_day):
             if i != 0:
                 new_dict[i-1] += k
             else:
-                new_dict[8] = k
-                new_dict[6] += k
+                new_dict[8], new_dict[6] = k, k
         data_dict = new_dict
     return sum(data_dict.values())
 
