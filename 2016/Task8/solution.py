@@ -21,7 +21,7 @@ def get_solve(part =1):
             else:
                 for idx, x_list in enumerate(matrix.matrix):
                     x_list[data_digit[0]] = new_list_data[idx]
-        matrix.print_matrix()
     return sum([len([x for x in x_list if x != "."]) for x_list in matrix.matrix])
 
 print(f"Решение части 1: {get_solve()}")
+print(f"Решение части 1: {matrix.print_matrix()}")
