@@ -20,6 +20,6 @@ def get_solve():
             else:
                 for idx, x_list in enumerate(matrix.matrix):
                     x_list[data_digit[0]] = new_list_data[idx]
-    return sum([len([x for x in x_list if x != "."]) for x_list in matrix.matrix])
+    return sum([len([x for x in x_list if x == "#"]) for x_list in matrix.matrix])
 print(f"Решение части 1: {get_solve()}")
 print(f"Решение части 2: \n{matrix.print_matrix(only_res=True)}")
