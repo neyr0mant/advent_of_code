@@ -51,18 +51,21 @@ class Matrix:
                     list_index.append((x, y))
         return list_index
 
-    def print_matrix(self, dict_elements: dict = None):
+    def print_matrix(self, dict_elements: dict = None, only_res=False):
         if not dict_elements:
             x_max, y_max, list_matrix = self.x_max, self.y_max, self.matrix
         else:
             new_matrix = self.get_matrix_with_change_elements(dict_elements)
             x_max, y_max = self.get_rank_matrix(new_matrix)
             list_matrix = new_matrix
+        res_matrix = "\n".join([" ".join([str(j) for j in i]) for i in list_matrix])
+        if only_res:
+            return res_matrix
         print(f"""Матрица размером {x_max}x{y_max}""")
         print(f"""Расположение осей""")
         print(f"""-- -- -- X\n¦\n¦\n¦\nY""")
-        res_matrix = "\n".join([" ".join([str(j) for j in i]) for i in list_matrix])
         print(res_matrix)
+        return res_matrix
 
     def get_matrix_with_change_elements(self, dict_elements: dict):
         new_matrix = deepcopy(self.matrix)
@@ -74,7 +77,7 @@ class Matrix:
         return new_matrix
 
 
-    def draw(self, factor=3, symbol_dif = 1) -> Image:
+    def draw(self, factor=3, symbol_dif = 1):
         size_x = factor * self.x_max
         size_y = factor * self.y_max
         im = Image.new('RGB', (size_x, size_y), '#1a1a1a')
