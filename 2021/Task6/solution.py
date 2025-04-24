@@ -9,7 +9,7 @@ def get_solve(count_day):
             else:
                 new_dict[8] = k
                 new_dict[6] += k
-        data_dict = {i:k for i,k in new_dict.items() if k !=0}
+        data_dict = new_dict
     return sum(data_dict.values())
 
 print(f"Решение части 1: {get_solve(80)}")
