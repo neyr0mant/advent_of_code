@@ -12,7 +12,7 @@ def get_solve(part=1):
             else:
                 count_all_answer += len(set([i for i in str_all_answer if str_all_answer.count(i) == group]))
             str_all_answer, group = "", 0
-    if part == 1:
+    if  part == 1 or group == 1:
         count_all_answer += len(set([i for i in str_all_answer]))
     else:
         count_all_answer += len(set([i for i in str_all_answer if str_all_answer.count(i) == group]))
