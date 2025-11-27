@@ -12,7 +12,6 @@ for data in open("input.txt"):
         dict_data["data"] = data
 
 def get_solve(part =1):
-    result = None
     data = dict_data["data"]
     if part == 1:
         set_data = set()
@@ -24,11 +23,11 @@ def get_solve(part =1):
                     set_data.add(new_data)
         result = len(set_data)
     else:
-        start = {}
-        for key, val in dict_data["convert_data"].items():
-            val_potential = [i for i in val if i in data]
-            if val_potential:
-                start.update({key: val_potential})
+        count_Y = data.count('Y')
+        count_Rn = data.count('Rn')
+        count_Ar = data.count('Ar')
+        total_elements = len(re.findall(r'[A-Z]', data))
+        result = total_elements - count_Rn - count_Ar - 2 * count_Y - 1
     return result
 
 print(f"Решение части 1: {get_solve()}")
