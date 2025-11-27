@@ -23,11 +23,8 @@ def get_solve(part =1):
                     set_data.add(new_data)
         result = len(set_data)
     else:
-        count_Y = data.count('Y')
-        count_Rn = data.count('Rn')
-        count_Ar = data.count('Ar')
         total_elements = len(re.findall(r'[A-Z]', data))
-        result = total_elements - count_Rn - count_Ar - 2 * count_Y - 1
+        result = total_elements - data.count('Rn') - data.count('Ar') - 2 * data.count('Y') - 1
     return result
 
 print(f"Решение части 1: {get_solve()}")
