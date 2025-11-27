@@ -9,6 +9,7 @@ def get_solve_p1(list_data_, len_preamble =5):
         if num not in sum_preamble:
             return num
         iteration += 1
+    return None
 
 def get_solve_p2(list_data_, target):
     start, cur_sum = 0, list_data_[0]
