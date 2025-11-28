@@ -25,10 +25,10 @@
 [❌](2015/Task25/solution.py "Задача 25")
 
 [2016](https://adventofcode.com/2016)  
-![](https://geps.dev/progress/32)
+![](https://geps.dev/progress/36)
 [✅](2016/Task1/solution.py "Задача 1")  [✅](2016/Task2/solution.py "Задача 2") [✅](2016/Task3/solution.py "Задача 3")
 [✅](2016/Task4/solution.py "Задача 4") [✅](2016/Task5/solution.py "Задача 5") [✅](2016/Task6/solution.py "Задача 6")
-[✅](2016/Task7/solution.py "Задача 7") [✅](2016/Task8/solution.py "Задача 8") [❌](2016/Task9/solution.py "Задача 9") 
+[✅](2016/Task7/solution.py "Задача 7") [✅](2016/Task8/solution.py "Задача 8") [✅](2016/Task9/solution.py "Задача 9") 
 [❌](2016/Task10/solution.py "Задача 10") [❌](2016/Task11/solution.py "Задача 11") [❌](2016/Task12/solution.py "Задача 12")
 [❌](2016/Task13/solution.py "Задача 13") [❌](2016/Task14/solution.py "Задача 14")[❌](2016/Task15/solution.py "Задача 15")
 [❌](2016/Task16/solution.py "Задача 16") [❌](2016/Task17/solution.py "Задача 17") [❌](2016/Task18/solution.py "Задача 18")
