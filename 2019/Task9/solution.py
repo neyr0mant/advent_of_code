@@ -7,10 +7,7 @@ class Intcode:
         self.mem = defaultdict(int)
         for i, val in enumerate(program):
             self.mem[i] = val
-        self.pc = 0
-        self.relative_base = 0
-        self.part = part
-        self.outputs = []
+        self.pc, self.relative_base, self.part, self.outputs = 0, 0, part, []
 
     def get_param(self, offset, mode):
         addr = self.pc + offset
@@ -28,61 +25,47 @@ class Intcode:
     def run(self):
         while True:
             instruction = self.mem[self.pc]
-            opcode = instruction % 100
-            modes = instruction // 100
-
-            mode1 = (modes // 1) % 10
-            mode2 = (modes // 10) % 10
-            mode3 = (modes // 100) % 10
-
+            opcode, modes = instruction % 100, instruction // 100
+            mode1, mode2, mode3  = (modes // 1) % 10, (modes // 10) % 10, (modes // 100) % 10
             if opcode == 99:
                 return self.outputs[-1] if self.outputs else None
-
             if opcode == 1:
                 a = self.get_param(1, mode1)
                 b = self.get_param(2, mode2)
                 self.mem[self.get_write_addr(3, mode3)] = a + b
                 self.pc += 4
-
             elif opcode == 2:
                 a = self.get_param(1, mode1)
                 b = self.get_param(2, mode2)
                 self.mem[self.get_write_addr(3, mode3)] = a * b
                 self.pc += 4
-
             elif opcode == 3:
                 self.mem[self.get_write_addr(1, mode1)] = self.part
                 self.pc += 2
-
             elif opcode == 4:
                 val = self.get_param(1, mode1)
                 self.outputs.append(val)
                 self.pc += 2
-
             elif opcode == 5:
                 if self.get_param(1, mode1) != 0:
                     self.pc = self.get_param(2, mode2)
                 else:
                     self.pc += 3
-
             elif opcode == 6:
                 if self.get_param(1, mode1) == 0:
                     self.pc = self.get_param(2, mode2)
                 else:
                     self.pc += 3
-
             elif opcode == 7:
                 a = self.get_param(1, mode1)
                 b = self.get_param(2, mode2)
                 self.mem[self.get_write_addr(3, mode3)] = 1 if a < b else 0
                 self.pc += 4
-
-            elif opcode == 8:  # equals
+            elif opcode == 8:
                 a = self.get_param(1, mode1)
                 b = self.get_param(2, mode2)
                 self.mem[self.get_write_addr(3, mode3)] = 1 if a == b else 0
                 self.pc += 4
-
             elif opcode == 9:
                 self.relative_base += self.get_param(1, mode1)
                 self.pc += 2
