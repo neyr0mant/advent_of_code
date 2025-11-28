@@ -22,12 +22,11 @@ def get_solve(list_data_, part =1):
         list_station.append((len(in_los), station, in_los))
         list_station.sort(reverse=True)
         amt_in_los, station, in_los = list_station[0]
-    if part ==1:
+    if part == 1:
         return amt_in_los
     destroyed = [(math.atan2(dy, dx), (dx, dy)) for dx, dy in in_los]
     destroyed.sort(reverse=True)
     dx, dy = destroyed[199][1]
-
     x, y = station[0]+dx, station[1]+dy
     while (x, y) not in asteroids:
         x, y = x+dx, y+dy
