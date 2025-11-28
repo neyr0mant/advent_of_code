@@ -12,4 +12,4 @@ def get_solve(list_data_, part=1):
     return int(min_summ)
 
 print(f"Решение части 1: {get_solve(list_data)}")
-print(f"Решение части 2: {get_solve(list_data,part=2)} ")
+print(f"Решение части 2: {get_solve(list_data,part=2)}")
