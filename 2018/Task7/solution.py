@@ -26,7 +26,6 @@ def get_solve(data_in, part=1):
                     heapq.heappush(available, dep_)
         result = "".join(list_res)
     else:
-        # Время для каждого шага: 60 + позиция буквы
         def step_time(c):
             return 60 + (ord(c) - ord('A') + 1)
         available = [step for step in steps if not pre[step]]
