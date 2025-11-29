@@ -2,7 +2,8 @@
 
 num = 347991
 def get_solve(num, part =1):
-    i, count_step, start, start_vector, step_x, step_y, dict_coordinate, summ = 1, 1, [0,0], (1,0), 0, 0, {(0,0):1}, 0
+    i, count_step, start, start_vector, step_x, step_y, dict_coordinate, summ = (1, 1, [0, 0], (1,0),
+                                                                                 0, 0, {(0, 0): 1}, 0)
     while i < num if part == 1 else summ < num:
         if step_x >= count_step or step_y >= count_step:
             start_vector = (-start_vector[1], start_vector[0])
