@@ -15,7 +15,7 @@ def assert_pass(pas):
                           enumerate(pas) if idx+2 < len(pas)]
     rule_1 = [i for i in triple_letter_list if i in triple_letter_list_all]
     rule_2 = not [i for i in ["i", "o", "l"] if i in pas]
-    rule_3 = len(re.findall(r"([a-zA-Z])\1", pas)) >= 2
+    rule_3 = len(set(re.findall(r"(.)\1", pas))) >= 2
     return True if all([rule_1, rule_2,rule_3]) else False
 
 def get_new_pass(pas, pas_add = ""):
