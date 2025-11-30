@@ -18,7 +18,7 @@ def get_solve(data, part=1):
                 if 1 <= i <= len(child_list):
                     value += child_list[i - 1]
         return value, position
-    root_value, _ = parse(0)
+    root_value = parse(0)[0]
     return root_value if part == 2 else summ_meta
 
 print(f"Решение части 1: {get_solve(data)}")
