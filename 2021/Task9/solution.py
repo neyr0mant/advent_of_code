@@ -37,11 +37,7 @@ def get_solve(part=1):
                         matrix[nx, ny] != 9):
                     stack.append((nx, ny))
         return sq
-    pool_sq_list = []
-    for x, y in low_points:
-        pool_sq_list.append(pool_sq(x, y))
-    pool_sq_list.sort(reverse=True)
-    return math.prod(pool_sq_list[:3])
+    return math.prod(sorted([pool_sq(i[0], i[1]) for i in low_points], reverse=True)[:3])
 
 
 
