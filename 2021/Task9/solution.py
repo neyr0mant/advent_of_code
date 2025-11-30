@@ -25,11 +25,9 @@ def get_solve(part=1):
         visited, stack, sq = set(), [(start_x, start_y)], 0
         while stack:
             x, y = stack.pop()
-            if (x, y) in visited:
+            if any([(x, y) in visited, matrix[x, y] == 9]):
                 continue
             visited.add((x, y))
-            if matrix[x, y] == 9:
-                continue
             sq += 1
             for dx, dy in vectors:
                 nx, ny = x + dx, y + dy
