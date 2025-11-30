@@ -1,8 +1,7 @@
 from functions import *
+import math
 list_str = [[int(j) for j in i.strip()] for i in open("input.txt")]
 matrix = Matrix(list_str)
-import math
-
 
 def get_solve(part=1):
     vectors, low_points = [(1, 0), (0, 1), (-1, 0), (0, -1)], []
