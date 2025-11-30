@@ -5,8 +5,7 @@ import math
 
 
 def get_solve(part=1):
-    vectors = [(1, 0), (0, 1), (-1, 0), (0, -1)]
-    low_points = []
+    vectors, low_points = [(1, 0), (0, 1), (-1, 0), (0, -1)], []
     for y in range(matrix.y_max):
         for x in range(matrix.x_max):
             cur = matrix[x, y]
@@ -23,9 +22,7 @@ def get_solve(part=1):
     if part == 1:
         return sum(matrix[x, y] + 1 for x, y in low_points)
     def pool_sq(start_x, start_y):
-        visited = set()
-        stack = [(start_x, start_y)]
-        size = 0
+        visited, stack, sq = set(), [(start_x, start_y)], 0
         while stack:
             x, y = stack.pop()
             if (x, y) in visited:
@@ -33,7 +30,7 @@ def get_solve(part=1):
             visited.add((x, y))
             if matrix[x, y] == 9:
                 continue
-            size += 1
+            sq += 1
             for dx, dy in vectors:
                 nx, ny = x + dx, y + dy
                 if (0 <= nx < matrix.x_max and
@@ -41,7 +38,7 @@ def get_solve(part=1):
                         (nx, ny) not in visited and
                         matrix[nx, ny] != 9):
                     stack.append((nx, ny))
-        return size
+        return sq
     pool_sq_list = []
     for x, y in low_points:
         pool_sq_list.append(pool_sq(x, y))
