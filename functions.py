@@ -61,11 +61,8 @@ class Matrix:
         res_matrix = "\n".join([" ".join([str(j) for j in i]) for i in list_matrix])
         if only_res:
             return res_matrix
-        print(f"""Матрица размером {x_max}x{y_max}""")
-        print(f"""Расположение осей""")
-        print(f"""-- -- -- X\n¦\n¦\n¦\nY""")
+        print(f"""Матрица размером {x_max}x{y_max}\nРасположение осей: X-→, Y↓""")
         print(res_matrix)
-        return res_matrix
 
     def get_matrix_with_change_elements(self, dict_elements: dict):
         new_matrix = deepcopy(self.matrix)
