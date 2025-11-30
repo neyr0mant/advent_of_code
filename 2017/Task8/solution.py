@@ -16,3 +16,8 @@ def get_solve(list_data_, part =1):
 
 print(f"Решение части 1: {get_solve(list_data)}")
 print(f"Решение части 1: {get_solve(list_data, part=2)}")
+
+
+""" f1 + f2 * f3 """
+
+
