@@ -134,7 +134,7 @@
 
 [2025](https://adventofcode.com/2025)  
 ![](https://geps.dev/progress/0)
-[❌](2025/Task1/solution.py "Задача 1")  [❌](2025/Task2/solution.py "Задача 2") [❌](2025/Task3/solution.py "Задача 3")
+[✅](2025/Task1/solution.py "Задача 1")  [❌](2025/Task2/solution.py "Задача 2") [❌](2025/Task3/solution.py "Задача 3")
 [❌](2025/Task4/solution.py "Задача 4") [❌](2025/Task5/solution.py "Задача 5") [❌](2025/Task6/solution.py "Задача 6")
 [❌](2025/Task7/solution.py "Задача 7") [❌](2025/Task8/solution.py "Задача 8") [❌](2025/Task9/solution.py "Задача 9") 
 [❌](2025/Task10/solution.py "Задача 10") [❌](2025/Task11/solution.py "Задача 11") [❌](2025/Task12/solution.py "Задача 12")
