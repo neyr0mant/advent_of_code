@@ -10,9 +10,8 @@ def get_solve(list_data_, part=1):
                 if new_pos == 0:
                     count_zero += 1
             else:
-                count_circle = abs(steps) // 100
-                count_zero += count_circle
-                rem_steps = abs(steps) - count_circle * 100
+                count_zero += abs(steps) // 100
+                rem_steps = abs(steps) % 100
                 if pos != 0:
                     if steps > 0 and rem_steps + pos > 99:
                         count_zero += 1
