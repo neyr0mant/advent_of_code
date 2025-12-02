@@ -1,7 +1,6 @@
-import re
-
+from functions import execution_time
 list_data = [j.split("-") for j in [i.strip() for i in open("input.txt")][0].split(",")]
-
+@execution_time
 def get_solve(list_data_, part =1):
     summ_bad = 0
     for interval in list_data_:
@@ -16,13 +15,15 @@ def get_solve(list_data_, part =1):
                         if left == right:
                             summ_bad += i
                 else:
-                    pattern = r'^(.+?)\1+$'
-                    res = re.findall(pattern, str_i)
-                    if len(res) == 1:
-                        if count := str_i.count(res[0]):
-                            if count >= 2:
-                                if res[0]*count == str_i:
-                                    summ_bad += i
+                    out, index = "", 0
+                    while index <= len_i//2:
+                        out += str_i[index]
+                        count = str_i.count(out)
+                        if count >= 2:
+                            if str_i == out*count:
+                                summ_bad += i
+                                break
+                        index += 1
     return summ_bad
 
 
