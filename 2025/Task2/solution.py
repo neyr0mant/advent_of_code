@@ -1,6 +1,7 @@
 from functions import execution_time
 list_data = [j.split("-") for j in [i.strip() for i in open("input.txt")][0].split(",")]
 
+
 @execution_time
 def get_solve(list_data_, part=1):
     total_sum = 0
