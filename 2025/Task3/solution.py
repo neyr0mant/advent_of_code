@@ -12,9 +12,6 @@ def get_solve(list_data_, part=1):
                 acc.pop()
                 delete -= 1
             acc.append(digit)
-        while delete > 0:
-            acc.pop()
-            delete -= 1
         summ_all += int("".join(acc[:n]))
     return summ_all
 
