@@ -1,63 +1,40 @@
-#https://adventofcode.com/2024/day/5
-from functions import execution_time
-RULE_ST = {}
-RULE_UPDATE = []
-for i in open("input.txt"):
-    x = i.strip("\n")
-    if "|" in x:
-        a, b = x.split("|")
-        a, b = int(a), int(b)
-        if res := RULE_ST.get(a, 0):
-            res.append(b)
-            RULE_ST[a] = res
+list_data = [i.strip() for i in open('input.txt', 'r')]
+dict_data = {"ranges": [], "list_id": []}
+for i in list_data:
+    if i:
+        if "-" in i:
+            cur_data = dict_data["ranges"]
+            dict_data["ranges"].append([int(j) for j in i.split("-")])
         else:
-            RULE_ST[a] = [b]
-    if "," in x:
-        list_str_rule = x.split(",")
-        RULE_UPDATE.append([int(i) for i in list_str_rule])
+            dict_data["list_id"].append(int(i))
 
-def assert_rule(rule_list):
-    len_list_rule = len(rule_list)
-    for idx, key in enumerate(rule_list):
-        if idx + 1 == len_list_rule:
-            return True
-        else:
-            result = RULE_ST.get(key)
-            if not result:
-                return False
-            else:
-                next_key = rule_list[idx+1]
-                if next_key not in result:
-                    return False
-
-def get_good_list(rule_list):
-    dict_rule = {i: [j for j in RULE_ST.get(i, [0]) if j in rule_list] for i in rule_list}
-    rule_list.sort(key=lambda key: len(dict_rule[key]), reverse=True)
-    return rule_list
-
-@execution_time
-def get_summ(part=1):
+def get_solve(dict_data_, part=1):
+    count_id = 0
     if part == 1:
-        return sum([rule[int(len(rule)/2)] for rule in RULE_UPDATE if assert_rule(rule)])
+        for id_ in dict_data_["list_id"]:
+            for range_ in dict_data["ranges"]:
+                start, end = range_
+                if id_ in range(start, end + 1):
+                    count_id += 1
+                    break
     else:
-        summ = 0
-        for rule in RULE_UPDATE:
-            res_assert = assert_rule(rule)
-            if res_assert:
-                continue
+        ranges = dict_data["ranges"]
+        ranges.sort(key=lambda x: x[0])
+        count_id, parse_range = 0, []
+        for cur in ranges:
+            if not parse_range:
+                parse_range.append(cur)
             else:
-                good_list = get_good_list(rule)
-                summ += rule[int(len(good_list)/2)]
-    return summ
-print(f"Решение части 1: {get_summ(part=1)}")
-print(f"Решение части 2: {get_summ(part=2)}")
+                last = parse_range[-1]
+                if cur[0] <= last[1] + 1:
+                    last[1] = max(last[1], cur[1])
+                else:
+                    parse_range.append(cur)
+        count_id = 0
+        for start, end in parse_range:
+            count_id += end - start + 1
+    return count_id
 
 
-
-
-
-
-
-
-
-
+print(f"Решение части 1: {get_solve(dict_data)}")
+print(f"Решение части 2: {get_solve(dict_data, part=2)}")
