@@ -8,7 +8,7 @@ for i in list_data:
             dict_data["ranges"].append([int(j) for j in i.split("-")])
         else:
             dict_data["list_id"].append(int(i))
-@execution_time
+
 
 def get_solve(dict_data_, part=1):
     count_id = 0
@@ -20,7 +20,8 @@ def get_solve(dict_data_, part=1):
                     count_id += 1
                     break
     else:
-        ranges = sorted(dict_data["ranges"], key=lambda x: x[0])
+        ranges = dict_data["ranges"]
+        ranges.sort(key=lambda x: x[0])
         count_id, parse_range = 0, []
         for cur in ranges:
             if not parse_range:
@@ -32,7 +33,7 @@ def get_solve(dict_data_, part=1):
                 else:
                     parse_range.append(cur)
         count_id = 0
-        for start, end in ranges:
+        for start, end in parse_range:
             count_id += end - start + 1
     return count_id
 
