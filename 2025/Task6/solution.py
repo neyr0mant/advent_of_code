@@ -21,7 +21,7 @@ def get_solve(part = 1):
         for cor in list_cor:
             start, end = cor
             if part == 1:
-                num_list = ["".join([j for j in x_list[start:end] if j not in [" ", "x"]]) for x_list in num_data]
+                num_list = ["".join([j for j in x_list[start:end] if j.isdigit()]) for x_list in num_data]
             else:
                 num_list = []
                 for x in range(start, end):
