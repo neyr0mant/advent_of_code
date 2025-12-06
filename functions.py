@@ -18,16 +18,22 @@ alphabet = {"lower": "abcdefghijklmnopqrstuvwxyz", "upper": "ABCDEFGHIJKLMNOPQRS
 
 
 class Matrix:
-    def __init__(self, list_data: list):
-        assert (len([i for i in list_data if len(i) == len(list_data[0])])
-                == len(list_data)), "Это не матрица!Не все списки равны по длине!"
-        self.matrix = list_data
+    def __init__(self, list_data: list, add_symbol = " "):
+        max_len_x, diff_line = max([len(i) for i in list_data]), 0
+        self.matrix = []
+        for idx, line_x in enumerate(list_data):
+            diff_line = abs(max_len_x - len(line_x))
+            # Выравниваем по x:
+            new_line_x = line_x + [add_symbol for _ in range(diff_line)]
+            self.matrix.append(new_line_x)
+        if diff_line:
+            print(f"Матрица была не прямоугольной, дополнили до прямоугольной символами '{add_symbol}'")
         self.x_max, self.y_max = self.get_rank_matrix(self.matrix)
         self.streams = []
-
     @staticmethod
     def get_rank_matrix(matrix: list):
         return len(matrix[0]), len(matrix)
+
 
     def update_list_elements(self, data_for_change: dict):
         for elem, list_x_y in data_for_change.items():
