@@ -2,6 +2,7 @@
 from functions import *
 list_data = [[j for j in i if j != "\n"] for i in open("input.txt")]
 matrix = Matrix(list_data)
+matrix.print_matrix()
 operators = ["*", "+"]
 data_index_operator = {i: [] for i in operators}
 operators_list = matrix.matrix[-1]
