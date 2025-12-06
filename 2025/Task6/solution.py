@@ -1,46 +1,42 @@
 #https://adventofcode.com/2024/day/6
-import sys
 from functions import *
-sys.setrecursionlimit(10000)
-laboratory_data = [[j for j in i.strip("\n ").split()[0]] for i in open("input.txt")]
-matrix = Matrix(laboratory_data)
-def get_answer():
-    x_max, y_max, start_symbol = matrix.x_max, matrix.y_max, "^"
-    data_move = {'^': [0, -1, '>'], '>': [1, 0, 'v'], 'v': [0, 1, '<'], '<': [-1, 0, '^']}
-    start_coordinate = matrix.find(start_symbol)[0]
-    x_security, y_security = start_coordinate
+list_data = [[j for j in i if j != "\n"] for i in open("input.txt")]
+matrix = Matrix(list_data)
+@execution_time
+def get_solve(part =1):
+    sum_all = 0
+    operators = ["*", "+"]
+    data_index_operator = {i: [] for i in operators}
+    operators_list = matrix.matrix[-1]
+    start_index = min([operators_list.index(i) for i in operators])
+    while start_index < matrix.x_max:
+        operator = operators_list[start_index]
+        next_list = [operators_list[start_index+1:].index(i) for i in operators if i in operators_list[start_index+1:]]
+        end_index = min(next_list) + start_index if next_list else matrix.x_max
+        data_index_operator[operator].append([start_index, end_index])
+        start_index = end_index + 1
+    num_data = matrix.matrix[:-1]
+    for operator, list_cor in data_index_operator.items():
+        for cor in list_cor:
+            start, end = cor
+            if part == 1:
+                num_list = ["".join([j for j in x_list[start:end] if j not in [" ", "x"]]) for x_list in num_data]
+            else:
+                num_list = []
+                for x in range(start, end):
+                    num = ""
+                    for y in range(matrix.y_max):
+                        digit = matrix[x, y]
+                        if digit.isdigit():
+                            num = num + digit
+                    num_list.append(num)
+            cmd = f"{operator}".join(num_list)
+            sum_all += eval(cmd)
+    return sum_all
 
-    def walk_security(x_start, y_start, symbol=start_symbol, set_dot = set(), set_square_position = set(),
-                      dict_all_position = {}, prison = 0):
-        set_dot.add((x_start, y_start))
-        set_square_position.add(symbol)
-        if not all([0 < x_start + 1 < x_max, 0 < y_start + 1 < y_max]):
-            return len(set_dot), prison
-        x_next, y_next = x_start + data_move[symbol][0], y_start + data_move[symbol][1]
-        next_symbol = matrix[x_next, y_next]
-        if next_symbol == "#":
-            symbol = data_move[symbol][2]
-            x_next, y_next = x_start + data_move[symbol][0], y_start + data_move[symbol][1]
-            # matrix.print_matrix(dict_all_position)
-        if len(set_square_position) == 4:
-            all_coordinate = []
-            [all_coordinate.extend(i) for i in list(dict_all_position.values())]
-            if (x_start, y_start) in all_coordinate:
-                # matrix.print_matrix(dict_all_position)
-                set_square_position = set(symbol)
-                prison += 1
-                # matrix.print_matrix({"O": [(x_next, y_next)]})
-        cur_position = dict_all_position.get(symbol, [])
-        cur_position.extend([(x_start, y_start)])
-        dict_all_position[symbol] = cur_position
-        return walk_security(x_next, y_next, symbol=symbol, set_square_position=set_square_position,
-                             dict_all_position=dict_all_position, prison=prison)
-    return walk_security(x_security, y_security)
 
-res_walk = get_answer()
-
-print(f"Решение части 1: {res_walk[0]}")
-print(f"Решение части 2: {res_walk[1]}")
+print(f"Решение части 1: {get_solve()}")
+print(f"Решение части 2: {get_solve(part = 2)}")
 
 
 
