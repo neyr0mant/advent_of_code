@@ -1,5 +1,6 @@
 #https://adventofcode.com/2024/day/6
 from functions import *
+from functools import reduce
 list_data = [[j for j in i if j != "\n"] for i in open("input.txt")]
 matrix = Matrix(list_data)
 matrix.print_matrix()
@@ -31,8 +32,12 @@ def get_solve(part = 1):
                         if digit.isdigit():
                             num = num + digit
                     num_list.append(num)
-            cmd = f"{operator_}".join(num_list)
-            sum_all += eval(cmd)
+            int_list = [int(n) for n in num_list]
+            if operator_ == '+':
+                res = sum(int_list)
+            else:
+                res = reduce(lambda a, b: a * b, int_list, 1)
+            sum_all += res
     return sum_all
 
 
