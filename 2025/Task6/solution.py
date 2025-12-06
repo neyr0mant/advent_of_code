@@ -17,7 +17,7 @@ num_data = matrix.matrix[:-1]
 @execution_time
 def get_solve(part = 1):
     sum_all = 0
-    for operator, list_cor in data_index_operator.items():
+    for operator_, list_cor in data_index_operator.items():
         for cor in list_cor:
             start, end = cor
             if part == 1:
@@ -31,7 +31,7 @@ def get_solve(part = 1):
                         if digit.isdigit():
                             num = num + digit
                     num_list.append(num)
-            cmd = f"{operator}".join(num_list)
+            cmd = f"{operator_}".join(num_list)
             sum_all += eval(cmd)
     return sum_all
 
