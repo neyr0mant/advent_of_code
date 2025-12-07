@@ -14,7 +14,7 @@ def get_solve(part=1):
         if list_start:
             break
     x_start, y_start = list_start[0]
-    laser_matrix = Matrix([[0] * matrix.x_max for _ in range(matrix.y_max)])
+    laser_matrix = Matrix([[0 for _ in range(matrix.x_max)] for _ in range(matrix.y_max)])
     laser_matrix[x_start, y_start] = 1
     while list_start:
         new_list_start = []
