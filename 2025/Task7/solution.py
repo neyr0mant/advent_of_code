@@ -14,10 +14,11 @@ def get_solve(part=1):
         if list_start:
             break
     x_start, y_start = list_start[0]
-    laser_matrix = Matrix([[0 for _ in range(matrix.x_max)] for _ in range(matrix.y_max)])
-    laser_matrix[x_start, y_start] = 1
+    laser_list = [0 for _ in range(matrix.x_max)]
+    laser_list[x_start] = 1
     while list_start:
         new_list_start = []
+        laser_list_new = [0 for _ in range(matrix.x_max)]
         for x_y in list_start:
             x, y = x_y
             y_new = y + 1
@@ -28,15 +29,17 @@ def get_solve(part=1):
                     for laser in new_lasers:
                         x_new = laser[0]
                         if 0 <= x_new <= matrix.x_max-1:
-                            laser_matrix[x_new, y_new] += laser_matrix[x, y]
+                            laser_list_new[x_new] += laser_list[x]
                             if laser not in new_list_start:
                                 new_list_start.append([x_new, y_new])
                 else:
-                    laser_matrix[x, y_new] += laser_matrix[x, y]
+                    laser_list_new[x] += laser_list[x]
                     if [x, y_new] not in new_list_start:
                         new_list_start.append([x, y_new])
         list_start = new_list_start
-    return count_p1 if part == 1 else sum(laser_matrix.matrix[-1])
+        if list_start:
+            laser_list = laser_list_new
+    return count_p1 if part == 1 else sum(laser_list)
 
 
 print(f"Решение части 1: {get_solve(part =1)}")
