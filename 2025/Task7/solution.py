@@ -21,6 +21,7 @@ def get_solve(part=1):
         for x_y in list_start:
             x, y = x_y
             y_new = y + 1
+            # matrix[x, y] = "|"
             if y_new <= matrix.y_max - 1:
                 if matrix[x, y_new] == "^":
                     count_p1 += 1
@@ -35,9 +36,11 @@ def get_solve(part=1):
                     laser_list_new[x] += laser_list[x]
                     if [x, y_new] not in new_list_start:
                         new_list_start.append([x, y_new])
+        # matrix.draw(factor=1, symbol_dif = "|", need_random=True)
         list_start = new_list_start
         if list_start:
             laser_list = laser_list_new
+    # matrix.get_gif("Гифка.gif")
     return count_p1 if part == 1 else sum(laser_list)
 
 

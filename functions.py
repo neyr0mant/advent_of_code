@@ -1,3 +1,4 @@
+import random
 import time
 from copy import deepcopy
 from PIL import Image, ImageDraw
@@ -80,17 +81,22 @@ class Matrix:
         return new_matrix
 
 
-    def draw(self, factor=3, symbol_dif = 1):
+    def draw(self, factor=3, symbol_dif = 1, color_main = "#00FF00", need_random = False):
         size_x = factor * self.x_max
         size_y = factor * self.y_max
         im = Image.new('RGB', (size_x, size_y), '#1a1a1a')
         draw = ImageDraw.Draw(im)
-        for y in range(self.y_max):
-            for x in range(self.y_max):
+        count_iter, color_draw = 0, color_main
+        for x in range(self.x_max-1):
+            for y in range(self.y_max-1):
                 x_size = x * factor
                 y_size = y * factor
+                count_iter += 1
+                if need_random:
+                    color_draw = random.choice(["#FF0000", "#0000FF", "#FFFF00"]) if (
+                            count_iter % 50 == 0) else color_main
                 if self.matrix[x][y] == symbol_dif:
-                    draw.point([(x_size, y_size)], '#ffa126')
+                    draw.point([(y_size, x_size)], color_draw)
         self.streams.append(im)
 
     def get_gif(self, name_gif=None):
