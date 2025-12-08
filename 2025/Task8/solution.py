@@ -1,6 +1,3 @@
-from heapq import heappush, heappop
-from functools import reduce
-# Read from input.txt
 list_data = [[int(j) for j in i.split(",")] for i in open("input.txt")]
 
 def get_solve(list_data_, part =1):
@@ -36,7 +33,7 @@ def get_solve(list_data_, part =1):
             rank[pa] += 1
         return True
 
-    parent1, rank1, size1  = list(range(n)), [0] * n, [1] * n
+    parent1, rank1, size1 = list(range(n)), [0] * n, [1] * n
     attempts = 10 if n == 20 else 1000
 
     for i in range(min(attempts, len(list_distance))):
