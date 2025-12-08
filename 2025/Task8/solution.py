@@ -36,11 +36,7 @@ def get_solve(list_data_, part =1):
             rank[pa] += 1
         return True
 
-    def make_uf():
-        parent, rank, size = list(range(n)), [0] * n, [1] * n
-        return parent, rank, size
-
-    parent1, rank1, size1 = make_uf()
+    parent1, rank1, size1  = list(range(n)), [0] * n, [1] * n
     attempts = 10 if n == 20 else 1000
 
     for i in range(min(attempts, len(list_distance))):
@@ -50,12 +46,12 @@ def get_solve(list_data_, part =1):
     comp_sizes = sorted([size1[i] for i in range(n) if find(parent1, i) == i], reverse=True)
     result = comp_sizes[0] * comp_sizes[1] * comp_sizes[2]
     if part == 2:
-        parent, rank, size = make_uf()
+        parent2, rank2, size2 = list(range(n)), [0] * n, [1] * n
         components = n
         last_a, last_b = -1, -1
         for k in range(len(list_distance)):
             _, a, b = list_distance[k]
-            if union(parent, rank, size, a, b):
+            if union(parent2, rank2, size2, a, b):
                 components -= 1
                 if components == 1:
                     last_a, last_b = a, b
