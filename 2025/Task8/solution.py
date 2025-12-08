@@ -37,7 +37,7 @@ def get_solve(list_data_, part =1):
     attempts = 10 if n == 20 else 1000
 
     for i in range(min(attempts, len(list_distance))):
-        _, a, b = list_distance[i]
+        a, b = list_distance[i][1:3]
         union(parent1, rank1, size1, a, b)
 
     comp_sizes = sorted([size1[i] for i in range(n) if find(parent1, i) == i], reverse=True)
@@ -47,7 +47,7 @@ def get_solve(list_data_, part =1):
         components = n
         last_a, last_b = -1, -1
         for k in range(len(list_distance)):
-            _, a, b = list_distance[k]
+            a, b = list_distance[k][1:3]
             if union(parent2, rank2, size2, a, b):
                 components -= 1
                 if components == 1:
