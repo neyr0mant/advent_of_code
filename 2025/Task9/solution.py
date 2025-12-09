@@ -69,7 +69,6 @@ def get_solve(list_data_, part=1):
                 area = (abs(x2 - x1) + 1) * (abs(y2 - y1) + 1)
                 pairs.append((area, i, j))
         pairs.sort(reverse=True)
-        max_area = 0
         for area, i, j in pairs:
             if area <= max_area:
                 break
