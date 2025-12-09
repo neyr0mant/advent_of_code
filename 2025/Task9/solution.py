@@ -5,9 +5,6 @@ list_data = [[int(j) for j in i.strip().split(",")] for i in open("input.txt")]
 def get_solve(list_data_, part=1):
     max_area = 0
     n = len(list_data_)
-    if n < 2:
-        return 0
-
     if part == 1:
         for i in range(n):
             for j in range(i + 1, n):
