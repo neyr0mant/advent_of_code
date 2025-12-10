@@ -1,6 +1,6 @@
 from pulp import *
 list_data = []
-for data in [i for i in open("input.txt")]:
+for data in [i for i in open("input.txt")]: # парсим данные
     l = data.find('[')
     r = data.find(']', l)
     pattern = data[l + 1:r]
