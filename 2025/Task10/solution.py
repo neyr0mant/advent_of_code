@@ -1,5 +1,25 @@
 from pulp import *
-list_data = [i for i in open("input.txt")]
+list_data = []
+for data in [i for i in open("input.txt")]:
+    l = data.find('[')
+    r = data.find(']', l)
+    pattern = data[l + 1:r]
+    buttons = []
+    pos = r
+    while True:
+        l = data.find('(', pos)
+        if l == -1:
+            break
+        r = data.find(')', l)
+        nums = [int(x) for x in data[l + 1:r].split(',') if x.isdigit()]
+        if nums:
+            buttons.append(nums)
+        pos = r + 1
+    l = data.find('{')
+    r = data.find('}', l)
+    powers = [int(x) for x in data[l + 1:r].split(',') if x.isdigit()]
+    m = len(buttons)
+    list_data.append([buttons, pattern, powers])
 
 def min_presses_part1(A, target):
     n = len(A)
@@ -77,23 +97,7 @@ def min_presses_part2(buttons, target):
 def get_solve(list_data_, part=1):
     count_all = 0
     for data in list_data_:
-        l = data.find('[')
-        r = data.find(']', l)
-        pattern = data[l + 1:r]
-        buttons = []
-        pos = r
-        while True:
-            l = data.find('(', pos)
-            if l == -1:
-                break
-            r = data.find(')', l)
-            nums = [int(x) for x in data[l + 1:r].split(',') if x.isdigit()]
-            if nums:
-                buttons.append(nums)
-            pos = r + 1
-        l = data.find('{')
-        r = data.find('}', l)
-        powers = [int(x) for x in data[l + 1:r].split(',') if x.isdigit()]
+        buttons, pattern, powers = data
         m = len(buttons)
         if part == 1:
             # Часть 1: нужно включить лампочки по шаблону
