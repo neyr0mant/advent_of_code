@@ -1,5 +1,6 @@
 list_data = [[int(j) for j in i.split(",")] for i in open("input.txt")]
-
+from functions import *
+@execution_time
 def get_solve(list_data_, part =1):
     n = len(list_data_)
     list_distance = []
@@ -8,8 +9,8 @@ def get_solve(list_data_, part =1):
             dx = list_data_[i][0] - list_data_[j][0]
             dy = list_data_[i][1] - list_data_[j][1]
             dz = list_data_[i][2] - list_data_[j][2]
-            dist2 = dx * dx + dy * dy + dz * dz
-            list_distance.append((dist2, i, j))
+            dist = dx * dx + dy * dy + dz * dz
+            list_distance.append((dist, i, j))
     list_distance.sort()
     def find(parent, x):
         if parent[x] != x:
